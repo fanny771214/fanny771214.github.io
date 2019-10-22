@@ -1,34 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>hello</title>
-<style>
-#block {
-        color:white;
-        background-color: purple;
-        height:50px;
-        width:210px;
-        font-size: 18pt
-      }
+    <style>
+        body {
+            margin: 0;
+        }
 
-</style>
+        #all {
+            width: 100%;
+            height: 100vh;
+            background-color: chartreuse;
+            display: flex;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        .block1:hover {
+            transform: scale(1.2, 1.2);
+            transition: 2s;
+        }
+
+        .block2:hover {
+            transform: scale(1.2, 1.2);
+            transition: 2s;
+        }
+
+        .block3:hover {
+            transform: scale(1.2, 1.2);
+            transition: 2s;
+        }
+
+        #container-1 {
+            width: 300px;
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .nav {
+            width: 300px;
+            height: 100vh;
+        }
+
+
+        .link {
+            width: 300px;
+            height: 600px;
+            margin: 0 auto;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            font-family: "標楷體";
+        }
+
+        .logo {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Toy_Story_Land_logo.svg/1233px-Toy_Story_Land_logo.svg.png");
+            height: 100px;
+            width: 120px;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+        }
+
+        #container-2 {
+            width: calc(100% - 300px);
+            height: calc(50vh + 250px);
+            background-color: rosybrown;
+            padding-top: calc(50vh - 250px);
+
+        }
+
+        section {
+            width: 80%;
+            height: 500px;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+
+        .block1 {
+            width: calc(100% / 3);
+            height: 500px;
+            background-image: url("https://live.staticflickr.com/7679/16988034939_cd5451b7b5_b.jpg");
+            background-position: center;
+            background-size: cover;
+            background-color: bisque;
+
+
+        }
+
+        .block2 {
+            width: calc(100% / 3);
+            height: 500px;
+            background-image: url("https://live.staticflickr.com/3350/4634541472_5697bfb8da_b.jpg");
+            background-position: right;
+            background-size: cover;
+            background-color: forestgreen;
+
+        }
+
+        .block3 {
+            width: calc(100% / 3);
+            height: 500px;
+            background-image: url("https://live.staticflickr.com/7578/15543602048_de5e1edef2_z.jpg");
+            background-position: center;
+            background-size: cover;
+            background-color: gold;
+
+        }
+    </style>
 
 
 </head>
 
 <body>
-       <b><i><div id="block">welcome to my home</div></b></i>
-       <p></p>
-       <p></p>
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.456696770749!2d120.70648011488947!3d24.085429884425228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693cb3ae438055%3A0xd9c1456727bc60e4!2z5ouJ5Lqe5ryi5aChIOWkp-mHjOe-jue-pA!5e0!3m2!1szh-TW!2stw!4v1570425601759!5m2!1szh-TW!2stw" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <div id="all">
+        <div id="container-1">
+            <div class="nav">
+                <div class="logo"></div>
+                <div class="buttom">
+                    <ul class="link">
+                        <li>
+                            <a href="#">首頁</a>
+                        </li>
+                        <li>
+                            <a href="#">介紹</a>
+                        </li>
+                        <li>
+                            <a href="#">其他</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="container-2">
+            <section>
+                <div class="block1"></div>
+                <div class="block2"></div>
+                <div class="block3"></div>
+            </section>
 
-       <iframe width="500" height="450" src="https://www.youtube.com/embed/WGIDDfNr0GQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
 
-
-
-
-    </body>
 </html>
