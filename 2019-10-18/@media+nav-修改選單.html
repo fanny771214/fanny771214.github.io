@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>media+nav</title>
+    <style>
+        body {
+            width: 1920px;
+            height: 1080px;
+            margin: 0;
+            background-color: aqua;
+        }
+
+        #all {
+            width: 1920px;
+            height: 1080px;
+            background-color: chartreuse;
+            display: flex;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        .block1:hover {
+            transform: scale(1.2, 1.2);
+            transition: 2s;
+        }
+
+        .block2:hover {
+            transform: scale(1.2, 1.2);
+            transition: 2s;
+        }
+
+        .block3:hover {
+            transform: scale(1.2, 1.2);
+            transition: 2s;
+        }
+
+        #container-1 {
+            width: 300px;
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .nav {
+            width: 300px;
+            height: 100vh;
+        }
+
+
+        .link {
+            width: 300px;
+            height: 600px;
+            margin: 0 auto;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .logo {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Toy_Story_Land_logo.svg/1233px-Toy_Story_Land_logo.svg.png");
+            height: 100px;
+            width: 120px;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+        }
+
+        #container-2 {
+            width: calc(100% - 300px);
+            height: calc(50vh + 250px);
+            background-color: rosybrown;
+            padding-top: calc(50vh - 250px);
+
+        }
+
+        section {
+            width: 1320px;
+            height: 500px;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+
+        .block1 {
+            width: calc(100% / 3);
+            height: 500px;
+            background-image: url("https://live.staticflickr.com/7679/16988034939_cd5451b7b5_b.jpg");
+            background-position: center;
+            background-size: cover;
+            background-color: bisque;
+
+
+        }
+
+        .block2 {
+            width: calc(100% / 3);
+            height: 500px;
+            background-image: url("https://live.staticflickr.com/3350/4634541472_5697bfb8da_b.jpg");
+            background-position: right;
+            background-size: cover;
+            background-color: forestgreen;
+
+        }
+
+        .block3 {
+            width: calc(100% / 3);
+            height: 500px;
+            background-image: url("https://live.staticflickr.com/7578/15543602048_de5e1edef2_z.jpg");
+            background-position: center;
+            background-size: cover;
+            background-color: gold;
+
+        }
+
+        @media screen and (max-width:1280px) {
+            body {
+                width: 1280px;
+                height: 1024px;
+            }
+
+            #all {
+                width: 1280px;
+                height: 1024px;
+            }
+
+
+            section {
+                width: 800px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .block1 {
+                width: 100%;
+                height: 250px;
+            }
+
+            .block2 {
+                width: 50%;
+                height: 250px;
+            }
+
+            .block3 {
+                width: 50%;
+                height: 250px;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            body {
+                width: 768px;
+                height: 1024px;
+            }
+
+            #all {
+                width: 768px;
+                height: 1024px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #container-1 {
+                width: 100%;
+                height: 100px;
+            }
+
+            .nav {
+                width: 100vw;
+                height: 100px;
+                display: flex;
+            }
+
+            .logo {
+                margin: unset;
+            }
+
+            .buttom {
+                display: flex;
+            }
+
+            .link {
+                width: calc(100vw - 120px);
+                height: 100px;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+
+            ul li {
+                margin: 0 50px;
+                padding: 10px;
+            }
+
+            #container-2 {
+                width: 100%;
+                height: calc(100% - 100px);
+                background-color: rosybrown;
+                padding-top: calc(50vh - 381px);
+            }
+
+            section {
+                width: 80%;
+                height: 600px;
+            }
+
+            .block1 {
+                width: 100%;
+                height: 300px;
+            }
+
+            .block2 {
+                width: 50%;
+                height: 300px;
+            }
+
+            .block3 {
+                width: 50%;
+                height: 300px;
+            }
+
+        }
+
+        @media screen and (max-width:375px) {
+            body {
+                width: 375px;
+                height: 667px;
+                margin: 0 auto;
+                box-sizing: border-box;
+            }
+
+            #all {
+                width: 375px;
+                height: 667px;
+            }
+
+            .block1:hover {
+                transform: scale(1, 1);
+            }
+
+            .block2:hover {
+                transform: scale(1, 1);
+            }
+
+            .block3:hover {
+                transform: scale(1, 1);
+            }
+
+            #container-1 {
+                width: 100%;
+                height: 67px;
+            }
+
+            .nav {
+                width: 100vw;
+                height: 67px;
+                position: relative;
+
+            }
+
+
+            #mnya-select {
+                width: 60px;
+                height: 67px;
+                font-size: 15px;
+                color: #0033CC;
+                background-color: #00CCFF;
+                text-align: center;
+                font-family: "標楷體"
+            }
+
+            .link {
+                display: none;
+            }
+
+            ul li a {
+                display: flex;
+            }
+
+            .logo {
+                width: 60px;
+                height: 50px;
+                order: 2;
+                position: absolute;
+                left: calc(50% - 30px);
+                top: calc(50% - 25px);
+            }
+
+
+
+            li {
+                margin: 0;
+            }
+
+            #container-2 {
+                width: 100%;
+                height: 600px;
+                padding-top: calc(50% - 300px);
+            }
+
+            section {
+                width: 100%;
+                height: 600px;
+            }
+
+            .block1 {
+                width: 100%;
+                height: 200px;
+            }
+
+            .block2 {
+                width: 100%;
+                height: 200px;
+            }
+
+            .block3 {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <div id="container-1">
+            <div class="nav">
+                <select name="select" id="buttom">
+                    <option>首頁</option>
+                    <option>介紹</option>
+                    <option>其他網站</option>
+                </select>
+                <div class="logo"></div>
+                <ul class="link">
+                    <li>
+                        <a href="#">首頁</a>
+                    </li>
+                    <li>
+                        <a href="#">介紹</a>
+                    </li>
+                    <li>
+                        <a href="#">其他網站</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="container-2">
+            <section>
+                <div class="block1"></div>
+                <div class="block2"></div>
+                <div class="block3"></div>
+            </section>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #all {
+            width: 100%;
+            height: 100vh;
+            background-color: chartreuse;
+            display: flex;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        .block1:hover {
+            transform: scale(1.2, 1.2);
+            transition: 2s;
+        }
+
+        .block2:hover {
+            transform: scale(1.2, 1.2);
+            transition: 2s;
+        }
+
+        .block3:hover {
+            transform: scale(1.2, 1.2);
+            transition: 2s;
+        }
+
+        #container-1 {
+            width: 300px;
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .nav {
+            width: 300px;
+            height: 100vh;
+        }
+
+
+        .link {
+            width: 300px;
+            height: 600px;
+            margin: 0 auto;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            font-family: "標楷體";
+        }
+
+        .logo {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Toy_Story_Land_logo.svg/1233px-Toy_Story_Land_logo.svg.png");
+            height: 100px;
+            width: 120px;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+        }
+
+        #container-2 {
+            width: calc(100% - 300px);
+            height: calc(50vh + 250px);
+            background-color: rosybrown;
+            padding-top: calc(50vh - 250px);
+
+        }
+
+        section {
+            width: 80%;
+            height: 500px;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+
+        .block1 {
+            width: calc(100% / 3);
+            height: 500px;
+            background-image: url("https://live.staticflickr.com/7679/16988034939_cd5451b7b5_b.jpg");
+            background-position: center;
+            background-size: cover;
+            background-color: bisque;
+
+
+        }
+
+        .block2 {
+            width: calc(100% / 3);
+            height: 500px;
+            background-image: url("https://live.staticflickr.com/3350/4634541472_5697bfb8da_b.jpg");
+            background-position: right;
+            background-size: cover;
+            background-color: forestgreen;
+
+        }
+
+        .block3 {
+            width: calc(100% / 3);
+            height: 500px;
+            background-image: url("https://live.staticflickr.com/7578/15543602048_de5e1edef2_z.jpg");
+            background-position: center;
+            background-size: cover;
+            background-color: gold;
+
+        }
+
+        @media screen and (max-width:1280px) {
+
+            #all {
+                width: 100%;
+                height: 100vh;
+            }
+
+
+            section {
+                width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .block1 {
+                width: 100%;
+                height: 250px;
+            }
+
+            .block2 {
+                width: 50%;
+                height: 250px;
+            }
+
+            .block3 {
+                width: 50%;
+                height: 250px;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            #all {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #container-1 {
+                width: 100%;
+                height: 100px;
+            }
+
+            .nav {
+                width: 100vw;
+                height: 100px;
+                display: flex;
+            }
+
+            .logo {
+                margin: unset;
+            }
+
+            .buttom {
+                display: flex;
+            }
+
+            .link {
+                width: calc(100vw - 120px);
+                height: 100px;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: row;
+            }
+
+            ul li {
+                margin: 0 15px;
+                padding: 10px;
+            }
+
+            #container-2 {
+                width: 100%;
+                height: calc(100% - 100px);
+                background-color: rosybrown;
+                padding-top: calc(50vh - 381px);
+            }
+
+            section {
+                width: 80%;
+                height: 600px;
+            }
+
+            .block1 {
+                width: 100%;
+                height: 300px;
+            }
+
+            .block2 {
+                width: 50%;
+                height: 300px;
+            }
+
+            .block3 {
+                width: 50%;
+                height: 300px;
+            }
+
+        }
+
+        @media screen and (max-width:375px) {
+            #all {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .block1:hover {
+                transform: scale(1, 0.9);
+                transition: 2s;
+            }
+
+            .block2:hover {
+                transform: scale(1, 0.9);
+                transition: 2s;
+            }
+
+            .block3:hover {
+                transform: scale(1, 0.9);
+                transition: 2s;
+            }
+
+            #container-1 {
+                width: 100%;
+                height: 67px;
+            }
+
+            .nav {
+                width: 100vw;
+                height: 67px;
+                position: relative;
+
+            }
+
+            .buttom {
+                width: 50px;
+                height: 50px;
+                background-color: cornflowerblue;
+                border-radius: 84px;
+                position: absolute;
+                left: 10px;
+                top: calc(50% - 25px);
+                background-image: url("http://www.ee.nsysu.edu.tw/alumni/info/201807/photo/menuicon.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .link {
+                display: none;
+                width: 80px;
+                height: 120px;
+            }
+
+
+
+            .logo {
+                width: 60px;
+                height: 50px;
+                order: 2;
+                position: absolute;
+                left: calc(50% - 30px);
+                top: calc(50% - 25px);
+            }
+
+            .buttom:hover .link {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: absolute;
+                padding: 0;
+                margin: 0;
+                background-color: rgba(238, 231, 231, 0.61);
+                top: 50px;
+                left: 0;
+            }
+
+            .buttom:hover .link a {
+                font-size: 14px;
+            }
+
+            li {
+                margin: 0;
+            }
+
+            #container-2 {
+                width: 100%;
+                height: 600px;
+                padding-top: calc(50% - 300px);
+            }
+
+            section {
+                width: 100%;
+                height: 600px;
+            }
+
+            .block1 {
+                width: 100%;
+                height: 200px;
+            }
+
+            .block2 {
+                width: 100%;
+                height: 200px;
+            }
+
+            .block3 {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <div id="container-1">
+            <div class="nav">
+                <div class="logo"></div>
+                <div class="buttom">
+                    <ul class="link">
+                        <li>
+                            <a href="#">首頁</a>
+                        </li>
+                        <li>
+                            <a href="#">介紹</a>
+                        </li>
+                        <li>
+                            <a href="#">其他</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="container-2">
+            <section>
+                <div class="block1"></div>
+                <div class="block2"></div>
+                <div class="block3"></div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

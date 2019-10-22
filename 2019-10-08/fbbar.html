@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fbbar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 43px;
+            background-color: blue;
+        }
+
+        .main {
+            width: 80vw;
+            height: 313px;
+            background-color: lightgoldenrodyellow;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .foot {
+            width: 80vw;
+            height: 43px;
+            background-color: rosybrown;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .data {
+            width: 168px;
+            height: 168px;
+            background-color: black;
+            position: absolute;
+            left: 5%;
+            bottom: 55%;
+            background-image: url("https://g.rimg.com.tw/s1/4/5a/51/21614436810321_828_m.jpg");
+            border: 5px solid yellow;
+            background-position: center;            
+            border-radius: 84px;
+            background-size: cover;
+        }
+
+        .button {
+            width: 120px;
+            height: 26px;
+            background-color: gray;
+            position: absolute;
+            right: 20px;
+            bottom: calc(100% - 90%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="main">
+        <div class="button"></div>
+    </div>
+    <div class="foot">
+        <div class="data">
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

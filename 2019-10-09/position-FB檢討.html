@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FB</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        a {
+            color: currentColor;
+        }
+
+
+
+        a:hover {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .all {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+
+        .header {
+            width: 100%;
+            height: 43px;
+            background-color: blue;
+
+        }
+
+        .containL {
+            width: 50%;
+            height: 43px;
+
+        }
+
+        .headerLL {
+            width: 24px;
+            height: 24px;
+            background-color: white;
+            float: left;
+            margin-top: 9px;
+            margin-left: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28pt;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+            color: blue;
+            border-radius: 2px;
+        }
+
+        .headerLR {
+            width: 448px;
+            height: 24px;
+            background-color: white;
+            float: left;
+            margin-top: 9px;
+            margin-left: 30px;
+            border-radius: 2px;
+            line-height: 24px;
+        }
+
+        .headerLRl {
+            width: 46px;
+            height: 24px;
+            margin-top: 9px;
+            margin-left: 30px;
+        }
+
+        .headerLRP {
+            width: 46px;
+            height: 24px;
+            float: right;
+            background-image:
+                url("data:image/jpeg;base64,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");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .comtaintR {
+            width: 50%;
+            height: 43px;
+        }
+
+        .headerR1 {
+            width: 28px;
+            height: 28px;
+            background-color: blue;
+            float: left;
+            margin-top: 9px;
+            margin-left: 200px;
+            background-image: url("https://g.rimg.com.tw/s1/4/5a/51/21614436810321_828_m.jpg");
+            border: 1px solid yellow;
+            background-position: center;
+            border-radius: 84px;
+            background-size: cover;
+        }
+
+        .headerR2 {
+            width: 43px;
+            height: 28px;
+            background-color: blue;
+            float: left;
+            margin-top: 9px;
+            margin-left: 10px;
+            text-align: left;
+            line-height: 26px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .headerR3 {
+            width: 43px;
+            height: 28px;
+            background-color: blue;
+            float: left;
+            margin-top: 9px;
+            margin-left: 30px;
+            text-align: left;
+            line-height: 26px;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        .headerR4 {
+            width: 43px;
+            height: 28px;
+            background-color: blue;
+            float: left;
+            margin-top: 9px;
+            margin-left: 30px;
+            text-align: left;
+            line-height: 26px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+        .main {
+            width: 90%;
+            height: 313px;
+            background-color: blue;
+            margin: 0 auto;
+            position: relative;
+            background-image:
+                url("https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/71143507_3035266066489688_7867292806711083008_n.jpg?_nc_cat=110&_nc_oc=AQkjeaNDldM4xBZpnKdqoU51Pya6wZQ4UmDLuves79Comy_XT1xuX1TuBoJewnM0qhM&_nc_ht=scontent-hkg3-2.xx&oh=f2fc8caea10fa5715c8e8debb130523f&oe=5E1A4823");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .buttonR {
+            width: 120px;
+            height: 26px;
+            background-color: navajowhite;
+            position: absolute;
+            right: 30px;
+            bottom: calc(100% - 90%);
+            text-align: center;
+            line-height: 26px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .buttonL {
+            width: 120px;
+            height: 26px;
+            background-color: navajowhite;
+            position: absolute;
+            right: 180px;
+            bottom: calc(100% - 90%);
+            text-align: center;
+            line-height: 26px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .foot {
+            width: 90%;
+            height: 43px;
+            background-color: ghostwhite;
+            margin: 0 auto;
+            position: relative;
+
+        }
+
+        .footL {
+            width: 30%;
+            height: 43px;
+        }
+
+        .footR {
+            width: 70%;
+            height: 43px;
+            float: right;
+            margin: 0 -100px;
+        }
+
+        .data {
+            width: 168px;
+            height: 168px;
+            background-color: black;
+            position: absolute;
+            left: 5%;
+            bottom: 55%;
+            background-image: url("https://g.rimg.com.tw/s1/4/5a/51/21614436810321_828_m.jpg");
+            border: 5px solid yellow;
+            background-position: center;
+            border-radius: 84px;
+            background-size: cover;
+        }
+
+        .footbtm1 {
+            width: 100px;
+            background-color: ghostwhite;
+            float: left;
+            margin-top: -43px;
+            color: blue;
+            text-align: center;
+            line-height: 43px;
+            font-weight: bold;
+            font-size: 16pt;
+
+        }
+
+        .footbtm2 {
+            width: 100px;
+            background-color: ghostwhite;
+            float: left;
+            margin-top: -43px;
+            margin-left: 100px;
+            color: blue;
+            margin-top: -43px;
+            text-align: center;
+            line-height: 43px;
+            font-weight: bold;
+            font-size: 16pt;
+
+        }
+
+        .footbtm3 {
+            width: 100px;
+            background-color: ghostwhite;
+            float: left;
+            margin-top: -43px;
+            margin-left: 180px;
+            color: blue;
+            text-align: center;
+            line-height: 43px;
+            font-weight: bold;
+            font-size: 16pt;
+            left: 38%;
+        }
+
+        .footbtm4 {
+            width: 100px;
+            background-color: ghostwhite;
+            float: left;
+            margin-top: -43px;
+            margin-left: 250px;
+            color: blue;
+            text-align: center;
+            line-height: 43px;
+            font-weight: bold;
+            font-size: 16pt;
+        }
+
+        .footbtm5 {
+            width: 100px;
+            background-color: ghostwhite;
+            margin-top: -43px;
+            margin-left: 320px;
+            color: blue;
+            text-align: center;
+            line-height: 43px;
+            font-weight: bold;
+            font-size: 16pt;
+            left: 51%;
+        }
+
+        .footbtm6 {
+            width: 100px;
+            background-color: ghostwhite;
+            margin-top: -43px;
+            margin-left: 400px;
+            color: blue;
+            text-align: center;
+            line-height: 43px;
+            font-weight: bold;
+            font-size: 16pt;
+        }
+    </style>
+</head>
+<div class="all">
+    <div class="header">
+        <div class="containtL">
+            <div class="headerLL">f</div>
+            <div class="headerLR">搜尋
+                <div class="headerLRP"></div>
+                <div class="headerLRl"></div>
+            </div>
+        </div>
+        <div class="containtR">
+            <div class="headerR1"></div>
+            <div class="headerR2"><a href="" style="text-decoration:none">宥宥</a></div>
+            <div class="headerR3"><a href="" style="text-decoration:none">首頁</a></div>
+            <div class="headerR4"><a href="" style="text-decoration:none">建立</a></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="buttonR"><a href="" style="text-decoration:none">活動紀錄</a></div>
+        <div class="buttonL"><a href="" style="text-decoration:none">編輯個人檔案</a></div>
+    </div>
+    <div class="foot">
+        <div class="footL"></div>
+        <div class="footR">
+            <div class="footbtm1"><a href="" style="text-decoration:none">動態時報</a></div>
+            <div class="footbtm2"><a href="" style="text-decoration:none">關於</a></div>
+            <div class="footbtm3"><a href="" style="text-decoration:none">朋友</a></div>
+            <div class="footbtm4"><a href="" style="text-decoration:none">相片</a></div>
+            <div class="footbtm5"><a href="" style="text-decoration:none">典藏</a></div>
+            <div class="footbtm6"><a href="" style="text-decoration:none">更多</a></div>
+        </div>
+        <div class="data">
+        </div>
+    </div>
+</div>
+</div>
+
+<body>
+
+</body>
+
+</html>

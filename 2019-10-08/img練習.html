@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>img</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 600px;
+            height: 600px;
+            background-color: yellow;
+            position: relative;
+            left:calc(50% - 300px)
+        }
+
+        .img {
+            width: 300px;
+            border: 3px solid red;
+            position: absolute;
+            right: calc(50% - 150px);
+            bottom: calc(50% - 25%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img class="img" src="https://www.publicdomainpictures.net/pictures/290000/nahled/kitten-vintage-painting.jpg"
+            alt="小貓繪畫">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toy Story Land</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(236, 231, 157);
+        }
+
+        nav .logo {
+            float: left;
+            padding: 0 10%;
+                    }
+
+        nav .logo img {
+            height: 100px;
+            width: 120px;   
+                   }
+
+        nav .logo h1 {
+            display: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+            padding: 0 10%;
+            float: right;
+        }
+
+        nav ul li {
+            float: left;
+
+        }
+
+        nav ul li a {
+            padding: 35px 20px;
+            display: block;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        #section-1 {
+            height: 800px;
+            background-image: url("https://live.staticflickr.com/7679/16988034939_cd5451b7b5_b.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #section-2 {
+            height: 800px;
+            background-image: url("https://live.staticflickr.com/3350/4634541472_5697bfb8da_b.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #section-3 {
+            height: 800px;
+            background-image: url("https://live.staticflickr.com/7578/15543602048_de5e1edef2_z.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .cleanfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Toy_Story_Land_logo.svg/1233px-Toy_Story_Land_logo.svg.png"
+                    alt="toy4">
+                <h1>Toy4</h1>
+            </div>
+            <ul>
+                <li>
+                    <a href="#section-1">Toy4</a>
+                </li>
+                <li>
+                    <a href="#section-2">Lotso</a>
+                </li>
+                <li>
+                    <a href="#section-3">Assemble</a>
+                </li>
+                <div class="cleanfix"></div>
+            </ul>
+        </nav>
+        <main>
+            <section id="section-1">
+                <div class="title"></div>
+            </section>
+            <section id="section-2">
+                <div class="title"></div>
+            </section>
+            <section id="section-3">
+                <div class="title"></div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

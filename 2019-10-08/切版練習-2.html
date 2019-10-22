@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>切版</title>
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0
+        }
+
+        .all {
+            width:34vw;
+            height:800px;
+            background-color: black;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .top {
+            width: 100%;
+            height: 20%;
+            background-color: red
+        }
+
+        .main {
+            width: 100%;
+            height: calc(40% - 20px);
+            background-color: coral;
+            margin: 10px 0;
+        }
+
+        .bottom {
+            width: 100%;
+            height: 40%;
+            background-color: paleturquoise;
+        }
+
+        .main-left {
+            width: 30%;
+            height: 100%;
+            background-color: brown;
+            float: left;
+            
+                    }
+
+        .main-right {
+            width:calc(70% - 10px);
+            height: 100%;
+            background-color: greenyellow;
+            float: right;      
+                    }
+
+        .main-right-top {
+            width:100%;
+            height: 30%;
+            background-color: hotpink;
+            margin-bottom: 10px;
+            float: right
+        }
+
+        .main-right-mid {
+            width: 100%;
+            height: calc(40% - 20px);
+            background-color: purple;
+            float: right
+        }
+
+        .main-right-down {
+            width: 100%;
+            height: 30%;
+            background-color: olive;
+            margin-top: 10px;
+            float: right
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="top"></div>
+        <div class="main">
+            <div class="main-left"></div>
+            <div class="main-right">
+                <div class="main-right-top"></div>
+                <div class="main-right-mid"></div>
+                <div class="main-right-down"></div>
+                <div class="back"></div>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+
+
+</body>
+
+</html>

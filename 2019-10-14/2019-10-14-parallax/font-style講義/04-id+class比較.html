@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 網頁的基本樣式 */
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: rgb(80, 212, 80);
+        }
+
+        .nav-green {
+            background-color: rgb(84, 199, 84);
+        }
+
+        .light {
+            background-color: lightgreen;
+        }
+
+        .border-green {
+            border: 1px solid green;
+        }
+
+        .font-green {
+            color: green;
+        }
+        /* 網頁的基本樣式 */
+
+
+
+        .test-box1 {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+
+        #test-box2 {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+
+        #test-box3 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(58, 148, 58);
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+        }
+
+        .mg-30 {
+            margin: 15px 0;
+        }
+
+        .floatL {
+            float: left;
+            margin: 0 30px 0 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>
+        標籤命名比較 ID v.s Class
+    </h2>
+    <p>為什麼要用Class?</p>
+
+    <div class="floatL">
+        用ID寫出來的長相
+        <div id="test-box1"></div>
+        <div class="mg-30"></div>
+        <div id="test-box2"></div>
+        <div class="mg-30"></div>
+        <div id="test-box3"></div>
+    </div>
+
+    <div class="floatL">
+        用Class寫出來的長相
+        <div class="box red"></div>
+        <div class="mg-30"></div>
+        <div class="box green"></div>
+        <div class="mg-30"></div>
+        <div class="box green"></div>
+    </div>
+    <div class="clear">
+        <p>看起來沒什麼差別? 回到編輯器來看看程式碼吧!</p>
+        <p>Q:這程式碼看起來ID寫的比較少,那我幹嘛要用class?</p>
+        <p style="white-space: pre">A:class和ID的最大差別就在於,class像是機器零件一般,透過多個定義好的內容組合成一個樣式,修改時只需把不需要的零件(class)換掉即可
+            即是class內可以放入多個名字,需要有所改變時再換成其他名字
+
+            而ID只能夠一次放一個名字,所以想要做出一個新的方塊必須將所有重複的樣式都輸入一次,
+            且修改時還需在大量重複內容的ID中尋找,不但大幅降低開發速度,過度重複的內容也會大量消耗儲存容量
+        </p>
+
+        <p>Q:那我是不是重複內容都用ID,剩下有變的部分再用class就好?</p>
+        <p style="white-space: pre">A:CSS選擇器實際上有優先順序,我們稱為"權重",
+            在不熟悉的情況下混著使用css選擇器時,很容易會因為權重關係造成想要的樣式無法確實的出現
+
+            為了避免這種情況發生,應該盡量以單一選擇器為主,而class做為較靈活且權重低(較容易被覆蓋)的選擇器,自然成為首選</p>
+
+        <a href="https://ithelp.ithome.com.tw/articles/10196454">點我查看CSS權重</a>
+    </div>
+
+
+</body>
+
+</html>

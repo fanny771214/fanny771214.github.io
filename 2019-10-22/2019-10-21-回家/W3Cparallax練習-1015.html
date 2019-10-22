@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>W3Cparallax</title>
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 3000px;
+        }
+
+        #banner-1 {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://live.staticflickr.com/7679/16988034939_cd5451b7b5_b.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+
+        .inder-banner {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.53);
+        }
+
+
+        .index-title {
+            padding: 10px;
+            background-color: grey;
+            font-size: 32px;
+            color: white;
+            position: absolute;
+            left: calc(50% - 142px);
+            top: calc(50% - 19px);
+            letter-spacing: 5px;
+            font-family: 'Zhi Mang Xing', cursive;
+        }
+
+        #content-1 {
+            padding: 30px;
+        }
+
+        .contene-title {
+            text-align: center;
+            color: red;
+            font-family: 'Sacramento', cursive;
+        }
+
+        .content-text {
+            text-align: justify;
+            color: gray;
+            line-height: 1.5;
+            font-size: 18px;
+            font-family: 'Sacramento', cursive;
+        }
+
+        #banner-2 {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://live.staticflickr.com/3350/4634541472_5697bfb8da_b.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        .contene-banner {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .content-title {
+            padding: 10px;
+            background-color: grey;
+            font-size: 32px;
+            color: white;
+            position: absolute;
+            left: calc(50% - 128px);
+            top: calc(50% - 19px);
+            letter-spacing: 5px;
+            font-family: 'Zhi Mang Xing', cursive;
+        }
+
+        #content-2 {
+            padding: 30px;
+        }
+
+        .content-text {
+            text-align: justify;
+            color: gray;
+            line-height: 1.5;
+            font-size: 18px;
+            font-family: 'Sacramento', cursive;
+        }
+
+        #banner-3 {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://live.staticflickr.com/7578/15543602048_de5e1edef2_z.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        #content-3 {
+            padding: 30px;
+        }
+
+        #footer {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://live.staticflickr.com/7679/16988034939_cd5451b7b5_b.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        .footer-banner {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .footer-title {
+            padding: 10px;
+            background-color: grey;
+            font-size: 32px;
+            color: white;
+            position: absolute;
+            left: calc(50% - 92px);
+            top: calc(50% - 19px);
+            letter-spacing: 5px;
+            font-family: 'Zhi Mang Xing', cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section id="banner-1">
+            <div class="mask"></div>
+            <div class="index-banner"></div>
+            <span class="index-title">SCROLL DOWN</span>
+        </section>
+        <section id="content-1">
+            <h1 class="contene-title">PARALLAX DEMO</h1>
+            <div class="content-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quas consequatur
+                alias ab iure maiores! Saepe, totam temporibus cupiditate commodi minus nesciunt fugit ea et est
+                explicabo incidunt eveniet atque quasi dolorum neque aperiam ut hic nisi deleniti ab quibusdam
+                recusandae sequi laborum! Delectus dicta cumque repellendus fugiat illo quibusdam, quae temporibus
+                ullam! Cumque itaque, soluta earum sapiente ullam illo laboriosam aperiam veritatis ut inventore
+                suscipit aliquid rem repudiandae laudantium magnam error aspernatur obcaecati fugiat eveniet amet!
+                Non,
+                officia laudantium nostrum possimus aut nam animi at veritatis beatae omnis ea ipsam libero eaque
+                quod
+                perspiciatis laboriosam quia quo. Et, ratione!
+            </div>
+        </section>
+        <section id="banner-2">
+            <div class="contene-banner">
+                <div class="mask">
+                    <span class="content-title">LESS HEIGHT</span>
+                </div>
+            </div>
+        </section>
+        <section id="content-2">
+            <div class="content-text">Scroll up and down to really get the feeling of how Parallax Scrolling works.
+            </div>
+        </section>
+        <section id="banner-3">
+            <div class="contene-banner">
+                <div class="mask">
+                    <span class="content-title">SCROLL UP</span>
+                </div>
+            </div>
+        </section>
+        <section id="content-3">
+            <div class="content-text">Scroll up and down to really get the feeling of how Parallax Scrolling works.
+            </div>
+        </section>
+        <section id="footer">
+            <div class="footer-banner">
+                <div class="mask"></div>
+            </div>
+            <span class="footer-title">SEE YOU!</span>
+    </main>
+</body>
+
+</html>

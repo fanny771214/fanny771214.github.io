@@ -1,0 +1,393 @@
+
+
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+}
+    
+
+.logo{
+        width: 100px;
+        height: 120px;
+        background-image: url("./圖片/4.jpg");
+        background-position: right;
+        background-size: cover;
+        margin-left: 30px;
+    }
+
+    .button{
+        width: calc(100% - 100px);
+        display: flex;  
+        position: relative;             
+    }
+
+    .link{
+        position: absolute;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        top:calc(50% - 25%);
+        right:10%;
+        list-style-type: none;
+            }
+
+    ul li {
+        margin: 0 15px;
+            }   
+
+    a{
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+         font-family: "標楷體";
+    }
+
+    main{
+        width: 100%;
+    }
+
+    section{
+        width: 80%;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+    }
+
+    .boder{
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    #img{
+        width: 48%;   
+        height: 100vh; 
+        background-image: url("./圖片/7.png");
+        background-position: center;
+        background-size: cover;  
+    }
+        
+    #img-span{
+        width: 48%;
+        height: 100vh;
+        text-align: justify;
+        line-height: 2.1;
+        padding:0 20px;
+        font-family: 'Zhi Mang Xing', cursive;
+    }
+
+    #img:hover{
+        background-image: url("./圖片/8.png");
+        transition: 1s;
+        background-position: left;
+    }
+
+    #parallax{
+        width: 100%; 
+        height: 100vh;
+        background-image: url("./圖片/5.jpg");
+        background-position: center;
+        background-size: cover;  
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    .mask {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.53);
+    }
+
+    .header {         
+        width: 200px;
+        height: 50px;  
+        font-size: 25px;
+        background-color: grey;
+        color: white;
+        position: absolute;
+        left: calc(50% - 100px); 
+        top: calc(50% - 25px);
+        letter-spacing: 5px;
+        text-align:center;
+        line-height: 50px;
+        font-family: 'Zhi Mang Xing', cursive;
+    }
+
+    #imgandtext{
+        width: 100%; 
+        height: 100vh;
+        display: flex;
+    }
+
+    .imgandtext1{
+        width: calc(100% / 3);
+        height: 100vh;
+            }
+
+    .imgT1{
+        width: 100%; 
+        height: 50vh;
+        background-image: url("./圖片/5.jpg");
+        background-position: center;
+        background-size: cover;  
+            }
+
+    .textT1{
+        width: 100%; 
+        height: 50vh;
+        text-align: justify;
+        line-height: 2.5;
+        font-family: 'Zhi Mang Xing', cursive;
+    }
+
+    .imgandtext2{
+        width: calc(100% / 3);
+        height: 100vh;
+        padding: 0 10px;
+    }
+
+    .imgT2{
+        width: 100%; 
+        height: 50vh;
+        background-image: url("./圖片/9.jpg");
+        background-position: center;
+        background-size: cover;  
+            }
+
+    .textT2{
+        width: 100%; 
+        height: 50vh;
+        text-align: justify;
+        line-height: 2.5;
+        font-family: 'Zhi Mang Xing', cursive;
+    }
+
+    .imgandtext3{
+        width: calc(100% / 3);
+        height: 100vh;
+    }
+
+    .imgT3{
+        width: 100%; 
+        height: 50vh;
+        background-image: url("./圖片/1.jpg");
+        background-position: center;
+        background-size: cover;  
+            }
+
+    .textT3{
+        width: 100%; 
+        height: 50vh;
+        text-align: justify;
+        line-height: 2.5;
+        font-family: 'Zhi Mang Xing', cursive;
+    }
+
+    footer{
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-family: "標楷體";
+        font-weight: bold;
+        color: brown
+    }
+
+    .top{
+        width: 60px;
+        height: 60px;
+        background-image: url("./圖片/top.svg");
+        background-position:center;
+        background-size: cover;  
+        position: fixed;
+        bottom: 50px;
+        right: 30px;
+        text-align: center;
+        line-height: 50px;
+        font-family: 'Zhi Mang Xing', cursive;
+        font-size: 15px;
+    }
+
+    .imgT1:hover {
+        transform: scale(1.2, 1);
+        transition: 2s;
+    }
+
+    .imgT2:hover {
+        transform: scale(1.2, 1);
+        transition: 2s;
+    }
+
+    .imgT3:hover {
+        transform: scale(1.2, 1);
+        transition: 2s;
+    }
+
+    @media screen and (max-width:991px) {
+
+    nav {
+        width: 100%;
+        background-color: blanchedalmond;
+        display: flex;
+        position: relative;
+        }
+        
+    .button {
+        width: 100px;
+        height: 100px;
+        background-color: cornflowerblue;
+        border-radius: 84px;
+         position: absolute;
+         left: 10px;
+        top: calc(50% - 50px);
+        background-image: url("./圖片/漢堡條.png");
+        background-size: cover;
+        background-position: center;
+        }
+
+    .logo{
+        margin: 0 auto;
+    }
+    
+    .link {
+        display: none;
+        width: 100px;
+        height: 150px;
+    }
+
+    .button:hover .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(238, 231, 231, 0.61);
+        top: 110px;
+        left: 0;
+    }
+
+    .boder{
+        flex-direction: column;
+        padding: 0 10px ;
+    }
+        
+    #img{
+        width: 100%;   
+        height: 50vh; 
+        order:2;
+    }
+            
+    #img-span{
+        width: 100%;   
+        height: 50vh; 
+        padding: 0;
+    }
+
+    .mask{
+        display: none;
+    }
+
+    .header{
+        display: none;
+    }
+
+    #imgandtext{
+        width: 100%; 
+        height: 100vh;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .imgandtext1{
+        width: 100%;
+        height: calc(100vh / 3 );
+                    }
+
+    .imgT1{
+        width: 100%; 
+        height: 50%;
+        background-position: top;
+        
+            }
+
+    .textT1{
+        width: 100%; 
+        height:  50%;
+        text-align: justify;
+        line-height:2;
+        font-size: 20px;      
+            }
+
+    .imgandtext2{
+        width: 100%;
+        height: calc(100vh / 3 );
+            }
+
+    .imgT2{
+        width: 100%;
+        height:  50%;
+        background-position: center;
+                    }
+
+    .textT2{
+        width: 100%; 
+        height:  50%;
+        text-align: justify;
+        line-height:2;
+        font-size: 20px; 
+            }
+
+    .imgandtext3{
+        width: 100%;
+        height: calc(100vh / 3  );
+    }
+
+    .imgT3{
+        width: 100%; 
+        height:  50%;
+        background-position: center;
+                    }
+
+    .textT3{
+        width: 100%; 
+        height:  50%;
+        text-align: justify;
+        line-height:2;
+        font-size: 20px; 
+            } 
+
+    .imgT1:hover {
+                transform: scale(0.9, 1);
+                transition: 2s;
+            }
+        
+    .imgT2:hover {
+                transform: scale(0.9, 1);
+                transition: 2s;
+            }
+        
+    .imgT3:hover {
+                transform: scale(0.9, 1);
+                transition: 2s;
+            }
+    }
+
+ 
+
+
+    
+
+
+
+    

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@media</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #all {
+            width: 800px;
+            height: 600px;
+            background-color: white;
+            margin: 0 auto;
+
+        }
+
+        .logo {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Toy_Story_Land_logo.svg/1233px-Toy_Story_Land_logo.svg.png");
+            height: 100px;
+            width: 120px;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 100vh;
+            background-color: greenyellow;
+            float: left;
+        }
+
+
+        .box2 {
+            width: 200px;
+            height: 100vh;
+            background-color: yellow;
+            float: left;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 100vh;
+            background-color: green;
+            float: left;
+        }
+
+        .box4 {
+            width: 200px;
+            height: 100vh;
+            background-color: skyblue;
+            float: left;
+        }
+
+        @media screen and (max-width:800px) {
+            #all {
+                width: 800px;
+                height: 600px;
+                background-color: brown;
+                margin: 0 auto;
+            }
+
+            .box1 {
+                width: 800px;
+                height: 50vh;
+                background-color: greenyellow;
+                float: left;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .box2 {
+                width: 300px;
+                height: 100vh;
+                background-color: yellow;
+                float: left;
+            }
+
+            .box3 {
+                width: 300px;
+                height: 100vh;
+                background-color: green;
+                float: left;
+            }
+
+            .box4 {
+                width: 200px;
+                height: 100vh;
+                background-color: skyblue;
+                float: left;
+            }
+
+        }
+
+        @media screen and (max-width:375px) {
+            #all {
+                width: 800px;
+                height: 600px;
+                background-color: brown;
+                margin: 0 auto;
+            }
+
+            .box1 {
+                width: 100%;
+                height: 20vh;
+                background-color: greenyellow;
+                float: left;
+            }
+
+            .logo {
+                width: 10px;
+                height: 20vh;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Toy_Story_Land_logo.svg/1233px-Toy_Story_Land_logo.svg.png");
+            }
+
+            .box2 {
+                width: 100%;
+                height: 100vh;
+                background-color: yellow;
+                float: left;
+            }
+
+            .box3 {
+                width: 100%;
+                height: 100vh;
+                background-color: green;
+                float: left;
+            }
+
+            .box4 {
+                width: 100%;
+                height: 100vh;
+                background-color: skyblue;
+                float: left;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+
+        <div class="box1">
+            <div class="logo"></div>
+        </div>
+        <div class="box2">11111</div>
+        <div class="box3">22222</div>
+        <div class="box4">33333</div>
+
+    </div>
+
+</body>
+
+</html>
