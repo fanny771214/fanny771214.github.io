@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="text1" class="title">Touch</h1>
+    <button id="btn1">Click</button>
+    <img id="Img" src="../2019-10-21/圖片/9.jpg" alt="">
+
+    <script>
+        var btn = document.querySelector('#btn1');
+        var title = document.querySelector('#text1');
+
+        btn.onclick = function () {
+            title.textContent = "byebye";
+        }
+
+        var image1 = "../2019-10-21/圖片/9.jpg";
+        var image2 = "../2019-10-21/圖片/5.jpg";
+        var img = document.querySelector("Img");
+
+        img.onclick = function myFunction() {
+
+            var current_img_src = img.getAttribute('src');
+
+            if (current_img_src == image1) {
+
+                img.setAttribute('src', image2);
+
+            } 
+            
+            else {
+                
+                img.setAttribute('src', image1);
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

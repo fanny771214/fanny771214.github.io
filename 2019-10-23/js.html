@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="header" class="title_one" onclick="gtitle()">Title</h1>
+    <h2 id="mid" class="title_two" onclick="Mid()">Hey You!</h2>
+
+
+    <script>
+        function gtitle() {
+            var myHeading = document.querySelector('h1.title_one');
+            myHeading.textContent = 'Lets go party';
+        }
+
+        function Mid() {
+            var myHeading = document.querySelector('h2.title_two');
+            myHeading.textContent = 'Lets go home';
+        }
+
+        
+
+    </script>
+</body>
+
+</html>
