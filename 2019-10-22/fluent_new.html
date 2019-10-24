@@ -135,7 +135,7 @@
         }
 
         .mobile_nav {
-            /* display: none; */
+            display: none;
             opacity: 0;
             pointer-events: none;
             position: fixed;
@@ -148,7 +148,7 @@
         }
 
         .mobile_nav.active {
-            /* display: block; */
+            display: block;
             opacity: 1;
             pointer-events: all;
         }
@@ -281,9 +281,11 @@
         var mobile_nav_toggle = document.querySelector(".mobile_nav_toggle");
         var mobile_nav = document.querySelector(".mobile_nav");
 
-        mobile_nav_toggle.onclick = function(){
+        mobile_nav_toggle.onclick = function () {
 
-            var mobile_nav = document.('active');
+            var mobile_nav = document.getElementById('.mobile_nav').classList.add('active');
+
+            
         }
 
     </script>
