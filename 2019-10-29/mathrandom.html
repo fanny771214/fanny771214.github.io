@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .card {
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        #reset {
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        #reset.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>猜數字(0~100)</h1><br>
+        <p class="info"></p>
+        <input type="number" id="user_guess_number" min="0" max="100">
+        <button id="btn">確認送出</button>
+        <button id="reset">重新開始</button>
+    </div>
+
+    <script>
+
+        var answer_number = Math.floor(Math.random() * 101);
+        var user_guess_number;
+        var guess_round = 1;
+        var big = 100;
+        var small = 0;
+        var info = document.querySelector(".info");
+        var btn = document.querySelector("#btn");
+        var reset = document.querySelector("#reset");
+        guess_round = 1;
+        console.log("答案是:", answer_number);
+
+
+        btn.onclick = function () {
+            user_guess_number = parseInt(document.querySelector("#user_guess_number").value);
+
+            // console.log("使用者輸入:", user_guess_number);
+
+            if (answer_number == user_guess_number) {
+                info.textContent = `恭喜你猜對了 花了${guess_round}次`;
+                reset.classList.add("show");
+
+            } else if (user_guess_number > answer_number) {
+                big = user_guess_number;
+                info.textContent = `太大嚕,範圍: ${small} ~ ${big}`;
+                guess_round++;
+
+            } else {
+                small = user_guess_number;
+                info.textContent = `太小嚕,範圍: ${small} ~ ${big}`;
+                guess_round++;
+            }
+
+        }
+
+        reset.onclick = function () {
+            answer_number = Math.floor(Math.random() * 101);
+            console.log("答案是:", answer_number);
+            var guess_round = 1;
+            var big = 100;
+            var small = 0;
+            info.textContent = "重新開始嚕";
+            document.querySelector("#user_guess_number").value = "";
+            reset.classList.remove("show");
+        }
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
