@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+
+</head>
+
+<body onload='ready()'>
+    <input type="text" id='num'>
+    <button onclick='check()'>確認一下</button>
+    <p id="msg"></p><br>
+    <p>目前範圍:<span id='small'></span>~<span id='big'></span></p>
+    <div id="pict"></div>
+
+
+    <script>
+        var result, input, msg;
+        var image = document.createElement("img");
+        var big = 100;
+        var small = 0;
+
+        (function ready() {
+
+            result = Math.floor(Math.random() * 101);
+            console.log(result);
+            if (result >= 1 || result <= 100) {
+                msg = '亂數準備好了，遊戲開始!';
+            } 
+            else {
+                result = Math.floor(Math.random() * 101);
+                msg = '亂數準備好了，遊戲開始!';
+            }
+
+            document.getElementById('msg').innerHTML = msg;
+            document.getElementById('big').innerHTML = big;
+            document.getElementById('small').innerHTML = small;
+        }());
+
+        function check() {
+            input = document.getElementById('num').value;
+            if (input == "") {
+                msg = "你什麼都沒有打啊孩子";
+            } else if (isNaN(input)) {
+                msg = "打數字阿啊孩子";
+            } else if (input == 0) {
+                msg = "打0是打心酸的嗎XDDDDD";
+            } else if (result > input && input < big) {
+                msg = '比' + input + '還大';
+                small = input;
+            } else if (result < input && input > small) {
+                msg = '比' + input + '還小';
+                big = input;
+            } else if (result == input) {
+                msg = '恭喜你猜對了! 答案是' + result + '。遊戲結束!';
+                image.setAttribute("src", "https://images.plurk.com/52FlovfQThyPeIhgrSvj.gif");
+            } else if (input <= small || input >= big) {
+                msg = '拜託打數字內的啦XDDDDD';
+            }
+
+            console.log(big + '/' + small + '/' + input);
+            
+            document.getElementById('msg').innerHTML = msg;
+            document.getElementById('big').innerHTML = big;
+            document.getElementById('small').innerHTML = small;
+            document.getElementById("pict").appendChild(image);
+        }
+
+
+
+    </script>
+</body>
+
+</html>
