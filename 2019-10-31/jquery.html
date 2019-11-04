@@ -106,13 +106,28 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script>
         // console.log($('.tabs'));
 
-        
+        $(".tabs").click(function () {
+            //拿掉所有人的active
+            $(".tabs").removeClass("active");
+
+            //加上自己按鈕的active
+            $(this).addClass("active");
+
+            //找到是第幾個
+            var index = $(".tabs").index(this);
+
+            $(".content").removeClass("active");
+
+            //加上自己內容的active
+            $(`.content:nth-child(${index + 1})`).addClass("active");
+
+        });
+
 
 
 
