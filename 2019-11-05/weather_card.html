@@ -70,9 +70,7 @@
 </style>
 
 <body>
-
     <div class="widget">
-
         <div class="left-panel panel">
             <div class="date"></div>
             <div class="city"></div>
@@ -83,23 +81,15 @@
         <div class="right-panel panel">
             <img src="https://s5.postimg.cc/lifnombwz/mumbai1.png" alt="" width="160">
         </div>
-
     </div>
-
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
-
-
-
-
         $.ajax({
             url: "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D",
             cache: false,
             success: function (res) {
-                console.log(res);
+                
             }
         });
 

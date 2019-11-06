@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>fluent_design</title>
     <style>
         * {
@@ -15,10 +17,11 @@
             height: 2000px;
             margin: 0;
             font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+            background-color: black;
         }
 
         /* 預設 */
-        .container {
+        .nav_container {
             width: 1536px;
             margin: 0 auto;
         }
@@ -29,7 +32,7 @@
             height: 48px;
         }
 
-        nav .container {
+        nav .nav_container {
             height: 100%;
             display: flex;
             align-items: center;
@@ -169,27 +172,119 @@
             padding: 25px 30px;
         }
 
+        main {
+            width: 100%;
+            position: relative;
+            overflow-x: hidden;
+            margin: 48px 0px 0px;
+            display: block;
+        }
+
+        .info .row {
+        position: relative;
+    }
+
+    .info{
+        overflow: hidden;
+    }
+
+    .info .row::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        background-color: rgb(34, 128, 200);
+        left: -50%;
+        top: 0;
+    }
+
+    .info .row::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        background-color: rgb(95, 207, 99);
+        right: -50%;
+        top: 0;
+    }
+
+
+
+    .info .col-xl-3:nth-child(1) {
+        background-color: rgb(37, 142, 222);
+    }
+
+    .info .col-xl-3:nth-child(2) {
+        background-color: rgb(79, 229, 255);
+    }
+
+    .info .col-xl-3:nth-child(3) {
+        background-color: rgb(207, 143, 255);
+    }
+
+    .info .col-xl-3:nth-child(4) {
+        background-color: rgb(105, 229, 110);
+    }
+
+    .info a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+    }
+
+
+    a div {
+        min-height: 96px;
+        width: 100%;
+        text-align: left;
+        flex: 1 1 auto;
+        padding: 26px;
+    }
+
+    h2 {
+        line-height: 40px;
+        font-size: 32px;
+        letter-spacing: -0.03rem;
+        font-weight: 600;
+        margin: 0px 0px 26px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        margin: 0px;
+    }
+
+    span {
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 0.01rem;
+    }
+
 
         @media (max-width: 1680px) {
-            .container {
+            .nav_container {
                 width: 1336px;
             }
         }
 
         @media (max-width: 1460px) {
-            .container {
+            .nav_container {
                 width: 1136px;
             }
         }
 
         @media (max-width: 1280px) {
-            .container {
+            .nav_container {
                 width: 960px;
             }
         }
 
         @media (max-width: 1024px) {
-            .container {
+            .nav_container {
                 padding: 0 30px;
                 width: 100%;
             }
@@ -223,7 +318,7 @@
 
 <body>
     <nav>
-        <div class="container">
+        <div class="nav_container">
             <div class="logo">
                 <a href="#">
                     <svg viewBox="0 0 24 24">
@@ -277,6 +372,89 @@
             </div>
         </div>
     </nav>
+    <main>
+
+    </main>
+    <section class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <a href="#">
+                            <div>
+                                <img src="../2019-11-06/img/icon-globe.svg" alt="">
+                            </div>
+                            <div>
+                                <h2>Web</h2>
+                                <p>Create your own web apps and add-ins.</p>
+                            </div>
+                            <div>
+                                <img src="../2019-11-06/img/arrow-black.svg" alt="">
+                                <span>Get started</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <a href="#">
+                            <div>
+                                <img src="../2019-11-06/img/icon-windows.svg" alt="">
+                            </div>
+                            <div>
+                                <h2>Windows</h2>
+                                <p>Create and publish your own Windows apps.</p>
+                            </div>
+                            <div>
+                                <img src="../2019-11-06/img/arrow-black.svg" alt="">
+                                <span>Get started</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <a href="#">
+                            <div>
+                                <img src="../2019-11-06/img/icon-ios.svg" alt="">
+                            </div>
+                            <div>
+                                <h2>iOS</h2>
+                                <p>Take your custom apps to the mobile market.</p>
+                            </div>
+                            <div>
+                                <img src="../2019-11-06/img/arrow-black.svg" alt="">
+                                <span>Get started</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <a href="#">
+                            <div>
+                                <img src="../2019-11-06/img/icon-android.svg" alt="">
+                            </div>
+                            <div>
+                                <h2>Android</h2>
+                                <p>Take your custom apps to the mobile market.</p>
+                            </div>
+                            <div>
+                                <img src="../2019-11-06/img/arrow-black.svg" alt="">
+                                <span>Get started</span>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+    
+    
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
     <script>
 
         var mobile_nav_toggle = document.querySelector(".mobile_nav_toggle");
@@ -291,7 +469,7 @@
 
             // document.getElementById(".mobile_nav_toggle");mobile_nav.classList.toggle(".mobile_nav");
 
-            
+
 
         }
 
