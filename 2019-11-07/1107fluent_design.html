@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1107</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+</style>
+
+<body>
+    <nav>
+        <div class="nav_container">
+            <div class="logo">
+                        <a href="#">
+                            <svg viewBox="0 0 24 24">
+                                <rect class="microsoft-red" width="11" height="11"></rect>
+                                <rect class="microsoft-green" x="13" width="11" height="11"></rect>
+                                <rect class="microsoft-blue" y="13" width="11" height="11"></rect>
+                                <rect class="microsoft-yellow" x="13" y="13" width="11" height="11"></rect>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="website_title">
+                        <h1>fluent design system</h1>
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li>
+                                <a href="#">web</a>
+                            </li>
+                            <li>
+                                <a href="#">windows</a>
+                            </li>
+                            <li>
+                                <a href="#">ios</a>
+                            </li>
+                            <li>
+                                <a href="#">android</a>
+                            </li>
+                        </ul>
+                    </div>        
+                    <div class="mobile_nav_toggle">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                    </div>
+                    <div class="mobile_nav">
+                        <ul>
+                            <li>
+                                <a href="#">web</a>
+                            </li>
+                            <li>
+                                <a href="#">windows</a>
+                            </li>
+                            <li>
+                                <a href="#">ios</a>
+                            </li>
+                            <li>
+                                <a href="#">android</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- <main></main> -->
+            <div id="four_link">
+                    <section class="info">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-xl-3">
+                                        <a href="#">
+                                            <div>
+                                                <img src="../2019-11-06/img/icon-globe.svg" alt="">
+                                            </div>
+                                            <div>
+                                                <h2>Web</h2>
+                                                <p>Create your own web apps and add-ins.</p>
+                                            </div>
+                                            <div>
+                                                <img src="../2019-11-06/img/arrow-black.svg" alt="">
+                                                <span>Get started</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-xl-3">
+                                        <a href="#">
+                                            <div>
+                                                <img src="../2019-11-06/img/icon-windows.svg" alt="">
+                                            </div>
+                                            <div>
+                                                <h2>Windows</h2>
+                                                <p>Create and publish your own Windows apps.</p>
+                                            </div>
+                                            <div>
+                                                <img src="../2019-11-06/img/arrow-black.svg" alt="">
+                                                <span>Get started</span>
+                                            </div>
+                                        </a>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                    <a href="#">
+                        <div>
+                            <img src="../2019-11-06/img/icon-ios.svg" alt="">
+                        </div>
+                        <div>
+                            <h2>iOS</h2>
+                            <p>Take your custom apps to the mobile market.</p>
+                        </div>
+                        <div>
+                            <img src="../2019-11-06/img/arrow-black.svg" alt="">
+                            <span>Get started</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                        <a href="#">
+                            <div>
+                                <img src="../2019-11-06/img/icon-android.svg" alt="">
+                            </div>
+                            <div>
+                                <h2>Android</h2>
+                                <p>Take your custom apps to the mobile market.</p>
+                            </div>
+                            <div>
+                                <img src="../2019-11-06/img/arrow-black.svg" alt="">
+                                <span>Get started</span>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script>
+                var mobile_nav_toggle = document.querySelector(".mobile_nav_toggle");
+                var mobile_nav = document.querySelector(".mobile_nav");
+                mobile_nav_toggle.onclick = function () {
+                    var mobile_nav_toggle = document.getElementById(".mobile_nav");
+                    mobile_nav.classList.toggle("active");
+                    // document.getElementById(".mobile_nav_toggle");mobile_nav.classList.toggle(".mobile_nav");
+                }
+        
+            </script>
+    
+</body>
+</html>

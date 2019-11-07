@@ -18,18 +18,37 @@
             margin: 0;
             font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
             background-color: black;
+            height: 100%;
+            display: block;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #all {
+            height: 100%;
+            display: block;
+            margin: 0px;
+            padding: 0px;
         }
 
         /* 預設 */
         .nav_container {
+            display: flex;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
             width: 1536px;
-            margin: 0 auto;
+            margin: 0px auto;
         }
 
         nav {
             background-color: black;
             color: white;
             height: 48px;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
         }
 
         nav .nav_container {
@@ -85,21 +104,31 @@
         }
 
         nav .nav-links ul {
+            width: 100%;
             display: flex;
-            margin: 0;
-            padding: 0 60px 0 120px;
-            list-style: none;
+            -webkit-box-pack: justify;
             justify-content: space-between;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
         }
 
+
+
         nav ul li a {
-            color: white;
+            width: auto;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            line-height: 49px;
             font-weight: 600;
-            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
         }
 
         .nav-links {
-            flex-grow: 1;
+            height: 48px;
+            flex: 1 1 auto;
+            padding: 0px 120px 0px 420px;
         }
 
         .mobile_nav_toggle {
@@ -159,6 +188,9 @@
 
         .mobile_nav ul {
             width: 100%;
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
             margin: 0px;
             padding: 0px;
             list-style: none;
@@ -180,95 +212,177 @@
             display: block;
         }
 
+        .main_container {
+            width: 100%;
+            margin: 145px 0px 60px;
+        }
+
+        .container_block {
+            display: flex;
+            width: 1536px;
+            margin: 0px auto;
+        }
+
+        .text_block {
+            width: 410px;
+            flex: 0 0 auto;
+        }
+
+        .text_block h2 {
+            width: 100%;
+            font-size: 64px;
+            line-height: 80px;
+            color: rgb(79, 229, 255);
+            font-weight: 600;
+            margin: 0px 0px 0px -6px;
+        }
+
+        .text_p {
+            width: 100%;
+            margin: 100px 0px 30px;
+        }
+
+        .text_pb {
+            width: 100%;
+            max-width: 352px;
+        }
+
+        .text_p1 {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            margin: 0px 0px 24px;
+        }
+
+        .text_p2 {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            margin: 0px 0px 24px;
+        }
+
+        .pic_block {
+            text-align: center;
+            position: relative;
+            flex: 1 1 auto;
+        }
+
+        .pic_block1 {
+            position: absolute;
+            top: -15px;
+            right: 180px;
+            pointer-events: none;
+        }
+
+        .pic_block2 {
+            position: absolute;
+            bottom: 155px;
+            left: 180px;
+            pointer-events: none;
+        }
+
+        .pic_block3 {
+            margin: 0px;
+            padding: 0px;
+            border-spacing: 0px;
+        }
+
         .info .row {
-        position: relative;
-    }
+            position: relative;
+        }
 
-    .info{
-        overflow: hidden;
-    }
+        .info {
+            overflow: hidden;
+            width: 100%;
+        }
 
-    .info .row::before {
-        content: "";
-        display: block;
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        background-color: rgb(34, 128, 200);
-        left: -50%;
-        top: 0;
-    }
+        .info .row::before {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            background-color: rgb(34, 128, 200);
+            left: -50%;
+            top: 0;
+        }
 
-    .info .row::after {
-        content: "";
-        display: block;
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        background-color: rgb(95, 207, 99);
-        right: -50%;
-        top: 0;
-    }
-
-
-
-    .info .col-xl-3:nth-child(1) {
-        background-color: rgb(37, 142, 222);
-    }
-
-    .info .col-xl-3:nth-child(2) {
-        background-color: rgb(79, 229, 255);
-    }
-
-    .info .col-xl-3:nth-child(3) {
-        background-color: rgb(207, 143, 255);
-    }
-
-    .info .col-xl-3:nth-child(4) {
-        background-color: rgb(105, 229, 110);
-    }
-
-    .info a {
-        display: block;
-        color: #000;
-        text-decoration: none;
-    }
+        .info .row::after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            background-color: rgb(95, 207, 99);
+            right: -50%;
+            top: 0;
+        }
 
 
-    a div {
-        min-height: 96px;
-        width: 100%;
-        text-align: left;
-        flex: 1 1 auto;
-        padding: 26px;
-    }
 
-    h2 {
-        line-height: 40px;
-        font-size: 32px;
-        letter-spacing: -0.03rem;
-        font-weight: 600;
-        margin: 0px 0px 26px;
-    }
+        .info .col-xl-3:nth-child(1) {
+            background-color: rgb(37, 142, 222);
+        }
 
-    p {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 600;
-        margin: 0px;
-    }
+        .info .col-xl-3:nth-child(2) {
+            background-color: rgb(79, 229, 255);
+        }
 
-    span {
-        font-size: 16px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        letter-spacing: 0.01rem;
-    }
+        .info .col-xl-3:nth-child(3) {
+            background-color: rgb(207, 143, 255);
+        }
+
+        .info .col-xl-3:nth-child(4) {
+            background-color: rgb(105, 229, 110);
+        }
+
+        .info a {
+            display: block;
+            color: #000;
+            text-decoration: none;
+        }
 
 
-        @media (max-width: 1680px) {
+        a div {
+            min-height: 96px;
+            width: 100%;
+            text-align: left;
+            flex: 1 1 auto;
+            padding: 26px;
+        }
+
+        h2 {
+            line-height: 40px;
+            font-size: 32px;
+            letter-spacing: -0.03rem;
+            font-weight: 600;
+            margin: 0px 0px 26px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+            margin: 0px;
+        }
+
+        span {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 0.01rem;
+        }
+
+
+        /* @media (max-width: 1680px) {
             .nav_container {
                 width: 1336px;
             }
+        }
+
+        .container_block {
+            width: 1336px;
         }
 
         @media (max-width: 1460px) {
@@ -277,10 +391,18 @@
             }
         }
 
+        .container_block {
+            width: 1136px;
+        }
+
         @media (max-width: 1280px) {
             .nav_container {
                 width: 960px;
             }
+        }
+
+        .container_block {
+            width: 960px;
         }
 
         @media (max-width: 1024px) {
@@ -290,6 +412,11 @@
             }
         }
 
+        .container_block {
+            width: 100%;
+            padding: 30px;
+        }
+
 
         @media (max-width: 1024px) {
             nav .logo {
@@ -297,85 +424,118 @@
             }
         }
 
-        /* mobile 選單出現 */
-        @media (max-width: 767px) {
-            .nav-links {
-                display: none;
+        @media (max-width: 960px) {
+            .container_block {
+                width: 100%;
+                padding: 0px 30px;
             }
 
-            .mobile_nav_toggle {
-                display: block;
-            }
-        }
 
-        @media (max-width: 670px) {
-            nav .logo {
-                width: 30px;
+            /* mobile 選單出現 */
+        /* @media (max-width: 767px) {
+                .nav-links {
+                    display: none;
+                }
+
+                .mobile_nav_toggle {
+                    display: block;
+                }
             }
-        }
+
+            @media (max-width: 670px) {
+                nav .logo {
+                    width: 30px;
+                }
+            } */
+        /* } */
     </style>
 </head>
 
 <body>
-    <nav>
-        <div class="nav_container">
-            <div class="logo">
-                <a href="#">
-                    <svg viewBox="0 0 24 24">
-                        <rect class="microsoft-red" width="11" height="11"></rect>
-                        <rect class="microsoft-green" x="13" width="11" height="11"></rect>
-                        <rect class="microsoft-blue" y="13" width="11" height="11"></rect>
-                        <rect class="microsoft-yellow" x="13" y="13" width="11" height="11"></rect>
-                    </svg>
-                </a>
+    <div id="all">
+        <nav>
+            <div class="nav_container">
+                <div class="logo">
+                    <a href="#">
+                        <svg viewBox="0 0 24 24">
+                            <rect class="microsoft-red" width="11" height="11"></rect>
+                            <rect class="microsoft-green" x="13" width="11" height="11"></rect>
+                            <rect class="microsoft-blue" y="13" width="11" height="11"></rect>
+                            <rect class="microsoft-yellow" x="13" y="13" width="11" height="11"></rect>
+                        </svg>
+                    </a>
+                </div>
+                <div class="website_title">
+                    <h1>Fluent Design System</h1>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="#">Web</a>
+                        </li>
+                        <li>
+                            <a href="#">Windows</a>
+                        </li>
+                        <li>
+                            <a href="#">iOS</a>
+                        </li>
+                        <li>
+                            <a href="#">Android</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile_nav_toggle">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </div>
+                <div class="mobile_nav">
+                    <ul>
+                        <li>
+                            <a href="#">web</a>
+                        </li>
+                        <li>
+                            <a href="#">windows</a>
+                        </li>
+                        <li>
+                            <a href="#">ios</a>
+                        </li>
+                        <li>
+                            <a href="#">android</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="website_title">
-                <h1>fluent design system</h1>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li>
-                        <a href="#">web</a>
-                    </li>
-                    <li>
-                        <a href="#">windows</a>
-                    </li>
-                    <li>
-                        <a href="#">ios</a>
-                    </li>
-                    <li>
-                        <a href="#">android</a>
-                    </li>
-                </ul>
+        </nav>
+        <main>
+            <div class="main_container">
+                <div class="container_block">
+                    <div class="text_block">
+                        <h2>Fluent Design System</h2>
+                        <div class="text_p">
+                            <div class="text_pb">
+                                <p class="text_p1">Fluent brings the fundamentals of principled design, innovation in
+                                    technology, and customer needs together as one. It’s a collective approach to
+                                    creating simplicity and coherence through a shared, open design system across
+                                    platforms.</p>
+                                <p class="text_p2">Open ecosystem, open design system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic_block">
+                        <img class="pic_block1" src="../2019-11-06/img/line-white-01.svg" alt="">
+                        <img class="pic_block2" src="../2019-11-06/img/line-white-02.svg" alt="">
+                        <img class="pic_block3" src="../2019-11-06/img/icon-fluent@1x.png"
+                            srcset="../2019-11-06/img/icon-fluent@1x.png 1x, ../2019-11-06/img/icon-fluent@2x.png 2x"
+                            alt="">
+                    </div>
+                </div>
             </div>
 
-            <div class="mobile_nav_toggle">
-                <span class="top-bar"></span>
-                <span class="middle-bar"></span>
-                <span class="bottom-bar"></span>
-            </div>
-            <div class="mobile_nav">
-                <ul>
-                    <li>
-                        <a href="#">web</a>
-                    </li>
-                    <li>
-                        <a href="#">windows</a>
-                    </li>
-                    <li>
-                        <a href="#">ios</a>
-                    </li>
-                    <li>
-                        <a href="#">android</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main>
 
-    </main>
-    <section class="info">
+        </main>
+        <section class="info">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 col-xl-3">
@@ -438,39 +598,27 @@
                             </div>
                         </a>
                     </div>
-    
+
                 </div>
             </div>
         </section>
-    
-    
-    
-    
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script>
-
         var mobile_nav_toggle = document.querySelector(".mobile_nav_toggle");
         var mobile_nav = document.querySelector(".mobile_nav");
-
-
         mobile_nav_toggle.onclick = function () {
-
             var mobile_nav_toggle = document.getElementById(".mobile_nav");
-
             mobile_nav.classList.toggle("active");
-
             // document.getElementById(".mobile_nav_toggle");mobile_nav.classList.toggle(".mobile_nav");
-
-
-
         }
 
     </script>
