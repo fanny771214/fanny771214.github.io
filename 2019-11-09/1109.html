@@ -11,6 +11,9 @@
     <style>
         * {
             box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            border-spacing: 0px;
         }
 
         body {
@@ -230,7 +233,6 @@
         }
 
         .text_block h2 {
-            width: 100%;
             font-size: 64px;
             line-height: 80px;
             color: rgb(79, 229, 255);
@@ -493,10 +495,24 @@
         .ball_block {
             opacity: 1;
             transform: translateY(0px);
+            position: absolute;
+            top: -200px;
+            right: 130px;
+            pointer-events: none;
+            z-index: 4;
+            /* transform: translateY(20px);
+            opacity: 0;
+            transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
         }
 
         .ball_block2 {
             transform: translateY(0px);
+            position: absolute;
+            top: 570px;
+            left: 190px;
+            pointer-events: none;
+            /* transform: translateY(400px);
+            transition: transform 600ms linear 0ms; */
         }
 
         .main_ball {
@@ -507,10 +523,39 @@
             -webkit-box-align: center;
             align-items: center;
             opacity: 1;
+            padding: 60px 30px;
             /* transform: scale(0.8);
             padding: 100px 100px 50px;
             transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
-        }        
+        }
+
+        .right_text {
+            width: 100%;
+            background-color: rgb(25, 25, 25);
+        }
+
+        .text_container {
+            position: relative;
+            display: flex;
+            -webkit-box-pack: end;
+            justify-content: flex-end;
+            width: 1536px;
+            margin: 0px auto;
+        }
+
+        .text_block_right {
+            width: 384px;
+            margin: 0px 0px 50px;
+            padding: 0px 16px;
+        }
+
+        .text_block_right p {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            margin: 0px;
+        }
     </style>
 </head>
 
@@ -689,11 +734,20 @@
                         <img src="../2019-11-06/img/line-white-03.svg" alt="">
                     </div>
                     <div class="main_ball">
-                        <img src="../2019-11-06/img/sphere@1x.png" srcset="../2019-11-06/img/sphere@1x.png 1x, ../2019-11-06/img/sphere@2x.png 2x"  alt="">
+                        <img src="../2019-11-06/img/sphere@1x.png"
+                            srcset="../2019-11-06/img/sphere@1x.png 1x, ../2019-11-06/img/sphere@2x.png 2x" alt="">
                     </div>
 
                 </div>
 
+            </section>
+            <section class="right_text">
+                <div class="text_container">
+                    <div class="text_block_right">
+                        <p>When design is intuitive, people are inspired to move forward. They’re understood and their
+                            behavior is anticipated. Experiences adapt to their needs, intent, and context.</p>
+                    </div>
+                </div>
             </section>
         </main>
 
