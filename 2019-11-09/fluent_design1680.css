@@ -1,0 +1,9 @@
+@media (max-width: 1680px) {
+    .nav_container {
+        width: 1336px;
+    }
+}
+
+.container_block {
+    width: 1336px;
+}
