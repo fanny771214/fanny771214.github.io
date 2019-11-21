@@ -189,7 +189,33 @@ nav ul li a {
     list-style: none;
 }
 
-.mobile_nav ul a {
+.mobile_nav ul li{
+    width: 100%;
+    font-size: 20px;
+    opacity: 1;
+    transform: translateY(40px);
+    padding: 0px;
+    margin: 0px;
+    transition: all 300ms ease 0ms;
+}
+
+.mobile_nav ul li:nth-child(1){
+    transform: translateY(0px);
+}
+
+.mobile_nav ul li:nth-child(2){
+    transform: translateY(0px);
+}
+
+.mobile_nav ul li:nth-child(3){
+    transform: translateY(0px);
+}
+
+.mobile_nav ul li:nth-child(4){
+    transform: translateY(0px);
+}
+
+.mobile_nav ul li a {
     color: rgb(255, 255, 255);
     position: relative;
     display: block;
@@ -221,7 +247,11 @@ main {
     flex: 0 0 auto;
 }
 
-.text_block h2 {
+.text_block1{
+    width: 100%;
+}
+
+.text_block1 h2 {
     font-size: 64px;
     line-height: 80px;
     color: rgb(79, 229, 255);

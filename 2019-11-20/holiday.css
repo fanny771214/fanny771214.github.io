@@ -1,0 +1,22 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#all{
+    width: 100%;    
+}
+
+#navbar{
+    width: 100%;   
+    display: flex;
+    background-color: blueviolet;
+   
+}
+
+.logo{
+    width: 15%;
+    text-align: center;
+    
+}

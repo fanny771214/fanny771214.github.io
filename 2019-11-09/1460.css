@@ -1,0 +1,40 @@
+@media (max-width: 1460px) {
+
+    .nav_container {
+        width: 1136px;
+    }
+
+    .nav-links{   
+    padding: 0px 60px 0px 120px;
+   }
+
+   .container_block{
+    width: 1136px;
+}
+
+.text_pb{
+    max-width: 384px;
+}
+
+.pic_block1{
+    top: 15px;
+    right: 36px;
+}
+
+.pic_block2{
+    bottom: 120px;
+    left: 30px;
+}
+
+.info .container {
+    width: 1136px;
+}
+
+.info_text{
+        height: 180px;
+}
+
+.pa_container {
+    width: 1136px;
+}
+}

@@ -1,9 +1,30 @@
 @media (max-width: 1680px) {
+
     .nav_container {
+        width: 1336px;
+    }
+   
+    .container_block{
+        width: 1336px;
+    }
+
+    .pic_block1{
+        top: -40px;
+        right: 36px;
+    }
+
+    .pic_block2{
+        bottom: 160px;
+    left: 30px;
+    }
+
+    .info .container {
+        width: 1336px;
+    }
+    
+    .pa_container {
         width: 1336px;
     }
 }
 
-.container_block {
-    width: 1336px;
-}
+
