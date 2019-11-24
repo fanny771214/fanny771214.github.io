@@ -47,4 +47,83 @@
     .pa_container {
         width: 960px;
     }
+
+    .pa_mask{
+        padding: 20px 0px 60px;
+    }
+
+    .pa_mainermask{
+        margin: 0px;
+    }
+
+    .pa_mainer{
+        margin: 0px;
+    padding: 0px 5px;
+    }
+
+    .ball_container{
+        width: 960px;
+    }
+
+    .text_container{
+        width: 960px;
+    }
+
+    .pic_text{
+        width: 960px;
+    }
+
+    .pic_text h2{
+    font-size: 96px;
+    line-height: 104px;
+    }
+
+    .design_pic{
+        min-height: 668px;
+    }
+
+    .design_container{
+        width: 960px;
+    }
+
+    .design_main1 h2{
+        font-size: 228px;
+    top: 40px;
+    left: 14px;
+    }
+
+    .design_main2 h2{
+        font-size: 228px;
+        top: 220px;
+        right: 10px;
+    }
+
+    .ablock{
+        display: none;
+    }
+
+    .engaging{
+        min-height: 668px;
+    }
+
+    .engaging_container{
+        width: 960px;
+    }
+
+    .engaging_title{
+        padding: 29px 0px 0px;
+    }
+
+    .engaging_title h2{
+        font-size: 96px;
+        line-height: 104px;
+    }
+
+    .shining{
+        min-height: 668px;
+    }
+
+    .shining_container{
+        width: 960px;
+    }
 }

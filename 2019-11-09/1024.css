@@ -61,5 +61,75 @@
     padding: 0px 30px;
 }
 
+.pa_mask{
+    padding: 29px 0px 40px;
+}
+
+.pa_text{
+    font-size: 86px;
+    line-height: 90px;
+    margin: 0px;
+}
+
+.pa_mainer{
+    padding: 0px 0px 0px 4px;
+}
+
+.ball_container{
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.text_container{
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.turn_pic_text{
+    bottom: 60px;
+}
+
+.pic_text{
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.pic_text h2{
+    font-size: 86px;
+    line-height: 90px;
+    margin: 0px;
+    }
+
+    .design_container{
+        width: 100%;
+    padding: 0px 30px;
+    }
     
+    .engaging_container{
+        width: 100%;
+    padding: 0px 30px;
+    }
+
+    .engaging_title h2{
+        font-size: 86px;
+        line-height: 90px;
+        margin: 0px;
+    }
+
+    .engaging_text_container{
+        padding: 0px 0px 0px 4px;
+    }
+
+    .block_img{
+        right: -20vw; 
+    }
+
+    .block_img img{
+        max-width: 70vw;
+    }
+
+    .shining_container{
+        width: 100%;
+        padding: 0px 30px;
+    }
     }

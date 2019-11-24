@@ -25,6 +25,50 @@
     .pa_container {
         width: 1336px;
     }
+
+    .ball_block{
+        right: 30px;
+    }
+
+    .text_container{
+        width: 1336px;
+    }
+
+    .pic_text{
+        width: 1336px;
+    }
+
+    .pic_text h2{
+        font-size: 96px;
+    line-height: 128px;
+    }
+
+    .design_container{
+        width: 1336px;
+    }
+
+    .design_main1 h2{
+        top: -40px;
+        font-size: 295px;
+    }
+
+    .design_main2 h2{
+        top: 120px;
+    right: -30px;
+    font-size: 295px;
+    }
+
+    .engaging_container{
+        width: 1336px;
+    }
+
+    .block_img img{
+        max-width: 50vw;
+    }
+
+    .shining_container{
+        width: 1336px;
+    }
 }
 
 

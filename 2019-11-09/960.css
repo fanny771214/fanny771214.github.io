@@ -32,4 +32,40 @@
     padding: 0px 30px;
 }
 
+.ball_container{
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.text_container{
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.text_block_right{
+    padding: 0px;
+}
+
+.design_pic{
+    background-attachment: scroll;
+}
+
+.design_container{
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.engaging_container{
+    width: 100%;
+    padding: 0px 30px 40px;
+}
+
+.shining{
+    background-attachment: scroll;
+}
+
+.shining_container{
+    width: 100%;
+    padding: 0px 30px;
+}
     }
