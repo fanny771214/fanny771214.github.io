@@ -86,11 +86,24 @@ nav svg .microsoft-yellow {
     transition: all .2s linear 0s
 }
 
-h1 {
-    margin: 0;
+.website_title {
+    height: 48px;
+    width: auto;
+    align-content: center;
+    flex: 0 0 auto;
+}
+
+.website_title h1 {
+    color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 600;
-    line-height: 49px
+    line-height: 49px;
+}
+
+.website_title h1 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 200ms linear 0ms;
 }
 
 nav .nav-links ul {
