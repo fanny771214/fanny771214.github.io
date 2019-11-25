@@ -1,52 +1,50 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    border-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0
 }
 
 body {
     height: 2000px;
     margin: 0;
     font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-    background-color: black;
-    /* height: 100%; */
+    background-color: #000;
     display: block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 #all {
     height: 100%;
     display: block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
-/* 預設 */
 .nav_container {
     display: flex;
     -webkit-box-pack: start;
     justify-content: flex-start;
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 nav {
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     height: 48px;
     width: 100%;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
+    top: 0;
+    left: 0;
+    z-index: 10
 }
 
 nav .nav_container {
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 nav .logo {
@@ -57,42 +55,42 @@ nav .logo {
     justify-content: flex-start;
     -webkit-box-align: center;
     align-items: center;
-    flex: 0 0 auto;
+    flex: 0 0 auto
 }
 
 nav .logo a {
-    margin-top: 4px;
+    margin-top: 4px
 }
 
 nav .logo svg {
-    width: 16px;
+    width: 16px
 }
 
 nav svg .microsoft-red {
-    fill: rgb(255, 255, 255);
-    transition: all 200ms linear 0ms;
+    fill: #fff;
+    transition: all .2s linear 0s
 }
 
 nav svg .microsoft-green {
-    fill: rgb(255, 255, 255);
-    transition: all 200ms linear 0ms;
+    fill: #fff;
+    transition: all .2s linear 0s
 }
 
 nav svg .microsoft-blue {
-    fill: rgb(255, 255, 255);
-    transition: all 200ms linear 0ms;
+    fill: #fff;
+    transition: all .2s linear 0s
 }
 
 nav svg .microsoft-yellow {
-    fill: rgb(255, 255, 255);
-    transition: all 200ms linear 0ms;
+    fill: #fff;
+    transition: all .2s linear 0s
 }
 
 h1 {
     margin: 0;
     font-size: 16px;
     font-weight: 600;
-    line-height: 49px;
+    line-height: 49px
 }
 
 nav .nav-links ul {
@@ -100,67 +98,64 @@ nav .nav-links ul {
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none
 }
-
-
 
 nav ul li a {
     width: auto;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 16px;
     line-height: 49px;
     font-weight: 600;
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none
 }
 
 .nav-links {
     height: 48px;
     flex: 1 1 auto;
-    padding: 0px 120px 0px 420px;
+    padding: 0 120px 0 420px
 }
 
 .mobile_nav_toggle {
     display: none;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 10px;
     height: 48px;
-    width: 48px;
+    width: 48px
 }
 
 .mobile_nav_toggle span {
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: rgb(255, 255, 255);
-    transition: all 200ms linear 0ms;
+    background-color: #fff;
+    transition: all .2s linear 0s
 }
 
 .mobile_nav_toggle span.top-bar {
     top: 17px;
     left: 12px;
-    transform: rotate(0deg);
+    transform: rotate(0)
 }
 
 .mobile_nav_toggle span.middle-bar {
     top: 24px;
     left: 12px;
-    opacity: 1;
+    opacity: 1
 }
 
 .mobile_nav_toggle span.bottom-bar {
     top: 31px;
     left: 12px;
-    transform: rotate(0deg);
+    transform: rotate(0)
 }
 
 .mobile_nav {
-    /* display: none; */
     opacity: 0;
     pointer-events: none;
     position: fixed;
@@ -168,152 +163,150 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: calc(100vh - 48px);
-    background-color: black;
-    transition: 1s;
+    background-color: #000;
+    transition: 1s
 }
 
 .mobile_nav.active {
-    /* display: block; */
     opacity: 1;
-    pointer-events: all;
+    pointer-events: all
 }
-
 
 .mobile_nav ul {
     width: 100%;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none
 }
 
-.mobile_nav ul li{
+.mobile_nav ul li {
     width: 100%;
     font-size: 20px;
     opacity: 1;
     transform: translateY(40px);
-    padding: 0px;
-    margin: 0px;
-    transition: all 300ms ease 0ms;
+    padding: 0;
+    margin: 0;
+    transition: all .3s ease 0s
 }
 
-.mobile_nav ul li:nth-child(1){
-    transform: translateY(0px);
+.mobile_nav ul li:nth-child(1) {
+    transform: translateY(0)
 }
 
-.mobile_nav ul li:nth-child(2){
-    transform: translateY(0px);
+.mobile_nav ul li:nth-child(2) {
+    transform: translateY(0)
 }
 
-.mobile_nav ul li:nth-child(3){
-    transform: translateY(0px);
+.mobile_nav ul li:nth-child(3) {
+    transform: translateY(0)
 }
 
-.mobile_nav ul li:nth-child(4){
-    transform: translateY(0px);
+.mobile_nav ul li:nth-child(4) {
+    transform: translateY(0)
 }
 
 .mobile_nav ul li a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     position: relative;
     display: block;
     text-decoration: none;
-    padding: 25px 30px;
+    padding: 25px 30px
 }
 
 main {
     width: 100%;
     position: relative;
     overflow-x: hidden;
-    margin: 48px 0px 0px;
-    display: block;
+    margin: 48px 0 0;
+    display: block
 }
 
 .main_container {
     width: 100%;
-    margin: 145px 0px 60px;
+    margin: 145px 0 60px
 }
 
 .container_block {
     display: flex;
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .text_block {
     width: 410px;
-    flex: 0 0 auto;
+    flex: 0 0 auto
 }
 
-.text_block1{
-    width: 100%;
+.text_block1 {
+    width: 100%
 }
 
 .text_block1 h2 {
     font-size: 64px;
     line-height: 80px;
-    color: rgb(79, 229, 255);
+    color: #4fe5ff;
     font-weight: 600;
-    margin: 0px 0px 0px -6px;
+    margin: 0 0 0 -6px
 }
 
 .text_p {
     width: 100%;
-    margin: 100px 0px 30px;
+    margin: 100px 0 30px
 }
 
 .text_pb {
     width: 100%;
-    max-width: 352px;
+    max-width: 352px
 }
 
 .text_p1 {
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    margin: 0px 0px 24px;
+    margin: 0 0 24px
 }
 
 .text_p2 {
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    margin: 0px 0px 24px;
+    margin: 0 0 24px
 }
 
 .pic_block {
     text-align: center;
     position: relative;
-    flex: 1 1 auto;
+    flex: 1 1 auto
 }
 
 .pic_block1 {
     position: absolute;
     top: -15px;
     right: 180px;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .pic_block2 {
     position: absolute;
     bottom: 155px;
     left: 180px;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .pic_block3 {
-    margin: 0px;
-    padding: 0px;
-    border-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0
 }
 
 .info {
     width: 100%;
-    position: relative;
+    position: relative
 }
 
 .info::before {
@@ -321,10 +314,10 @@ main {
     width: 50vw;
     height: 100%;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 1;
-    background-color: rgb(34, 128, 200);
+    background-color: #2280c8
 }
 
 .info::after {
@@ -332,63 +325,61 @@ main {
     width: 50vw;
     height: 100%;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     z-index: 1;
-    background-color: rgb(95, 207, 99);
+    background-color: #5fcf63
 }
 
 .info .container {
     display: flex;
     flex-wrap: wrap;
     width: 1536px;
-    margin: 0px auto;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0
 }
 
 .info .row {
     width: 100%;
     display: flex;
-    position: relative;
-
+    position: relative
 }
 
-
 .info .section_block:nth-child(1) {
-    background-color: rgb(37, 142, 222);
+    background-color: #258ede;
     width: 25%;
     height: 384px;
     position: relative;
-    z-index: 2;
+    z-index: 2
 }
 
 .section_block:nth-child(2) {
-    background-color: rgb(79, 229, 255);
+    background-color: #4fe5ff;
     width: 25%;
     height: 384px;
     position: relative;
-    z-index: 2;
+    z-index: 2
 }
 
 .section_block:nth-child(3) {
-    background-color: rgb(207, 143, 255);
+    background-color: #cf8fff;
     width: 25%;
     height: 384px;
     position: relative;
-    z-index: 2;
+    z-index: 2
 }
 
 .section_block:nth-child(4) {
-    background-color: rgb(105, 229, 110);
+    background-color: #69e56e;
     width: 25%;
     height: 384px;
     position: relative;
-    z-index: 2;
+    z-index: 2
 }
 
 img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 100%
 }
 
 .info a {
@@ -398,23 +389,22 @@ img {
     flex-direction: column;
     text-decoration: none;
     color: #000;
-    text-decoration: none;
+    text-decoration: none
 }
-
 
 .icon_block {
     min-height: 96px;
     width: 100%;
     text-align: left;
     flex: 1 1 auto;
-    padding: 26px 26px 76px 26px;
+    padding: 26px 26px 76px 26px
 }
 
 .info_text {
     height: 100px;
     width: 100%;
     flex: 0 0 auto;
-    padding: 0px 26px;
+    padding: 0 26px
 }
 
 .info_text_img {
@@ -425,110 +415,105 @@ img {
     -webkit-box-align: center;
     align-items: center;
     flex: 0 0 auto;
-    padding: 0px 26px 10px;
-    min-height: 0;
+    padding: 0 26px 10px;
+    min-height: 0
 }
 
 h2 {
-    color: rgb(0, 0, 0);
+    color: #000;
     font-size: 32px;
-    letter-spacing: -0.03rem;
+    letter-spacing: -.03rem;
     line-height: 40px;
     font-weight: 600;
-    margin: 0px 0px 26px;
+    margin: 0 0 26px
 }
 
 p {
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
-    margin: 0px;
+    margin: 0
 }
 
 span {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 0.01rem;
+    letter-spacing: .01rem
 }
 
 .parallax {
     width: 100%;
     min-height: 768px;
-    background: url('https://www.microsoft.com/design/fluent/assets/images/msft-verge-fluent.jpg') 50% center / cover no-repeat fixed rgb(204, 204, 204);
+    background: url(https://www.microsoft.com/design/fluent/assets/images/msft-verge-fluent.jpg) 50% center/cover no-repeat fixed #ccc
 }
 
 .pa_container {
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .pa_mask {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0)
 }
 
 .pa_text {
     display: block;
-    color: rgb(0, 0, 0);
+    color: #000;
     font-size: 128px;
     line-height: 150px;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .pa_mainermask {
     width: 100%;
     opacity: 1;
     transform: translateY(20px);
-    margin: 60px 0px 0px;
-    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+    margin: 60px 0 0;
+    transition: opacity .6s linear 0s, transform .6s linear 0s
 }
 
 .pa_mainer {
     width: 100%;
     max-width: 384px;
-    padding: 0px 16px 0px 24px;
+    padding: 0 16px 0 24px
 }
 
 .pa_mainer p {
-    color: rgb(0, 0, 0);
+    color: #000;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    margin: 0px;
+    margin: 0
 }
 
 .ball {
     width: 100%;
-    background-color: rgb(25, 25, 25);
+    background-color: #191919
 }
 
 .ball_container {
     position: relative;
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .ball_block {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
     position: absolute;
     top: -200px;
     right: 130px;
     pointer-events: none;
-    z-index: 4;
-    /* transform: translateY(20px);
-    opacity: 0;
-    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
+    z-index: 4
 }
 
 .ball_block2 {
-    transform: translateY(0px);
+    transform: translateY(0);
     position: absolute;
     top: 570px;
     left: 190px;
-    pointer-events: none;
-    /* transform: translateY(400px);
-    transition: transform 600ms linear 0ms; */
+    pointer-events: none
 }
 
 .main_ball {
@@ -539,15 +524,12 @@ span {
     -webkit-box-align: center;
     align-items: center;
     opacity: 1;
-    padding: 60px 30px;
-    /* transform: scale(0.8);
-    padding: 100px 100px 50px;
-    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
+    padding: 60px 30px
 }
 
 .right_text {
     width: 100%;
-    background-color: rgb(25, 25, 25);
+    background-color: #191919
 }
 
 .text_container {
@@ -556,69 +538,69 @@ span {
     -webkit-box-pack: end;
     justify-content: flex-end;
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .text_block_right {
     width: 384px;
-    margin: 0px 0px 50px;
-    padding: 0px 16px;
+    margin: 0 0 50px;
+    padding: 0 16px
 }
 
 .text_block_right p {
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    margin: 0px;
+    margin: 0
 }
 
 .turn_pic {
     width: 100%;
     position: relative;
-    background-color: rgb(25, 25, 25);
+    background-color: #191919
 }
 
 .turn_pic_text {
     position: absolute;
     bottom: 80px;
-    left: 0px;
+    left: 0;
     width: 100%;
-    z-index: 4;
+    z-index: 4
 }
 
 .pic_text {
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .pic_text h2 {
-    color: rgb(25, 25, 25);
+    color: #191919;
     font-size: 128px;
     line-height: 144px;
     font-weight: 600;
-    margin: 0px 0px 0px 26px;
+    margin: 0 0 0 26px
 }
 
 .pic_main {
-    opacity: 0.931973;
-    transform: translate3d(0px, 6.80274px, 0px) scale(1.01361, 1.01361);
+    opacity: .931973;
+    transform: translate3d(0, 6.80274px, 0) scale(1.01361, 1.01361)
 }
 
 .pic_main img {
     width: 100%;
     min-width: 2000px;
     position: relative;
-    align-self: center;
+    align-self: center
 }
 
 .design_pic {
     position: relative;
-    top: 0px;
+    top: 0;
     z-index: 2;
     width: 100%;
     min-height: 948px;
-    background: url(https://www.microsoft.com/design/fluent/assets/images/clouds.jpg) 50% center / cover no-repeat fixed rgb(0, 0, 0);
+    background: url(https://www.microsoft.com/design/fluent/assets/images/clouds.jpg) 50% center/cover no-repeat fixed #000
 }
 
 .design_container {
@@ -626,14 +608,14 @@ span {
     display: flex;
     height: 100%;
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .disign_block {
     position: absolute;
     top: -240px;
     right: -260px;
-    width: 768px;
+    width: 768px
 }
 
 .design_blockimg1 {
@@ -642,24 +624,24 @@ span {
     left: 2px;
     z-index: 4;
     opacity: 1;
-    transform: translateY(122px);
+    transform: translateY(122px)
 }
 
 .design_blockimg2 {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 3;
+    top: 0;
+    left: 0;
+    z-index: 3
 }
 
 .design_main1 h2 {
     position: absolute;
     top: -100px;
-    left: 0px;
+    left: 0;
     font-size: 395px;
     line-height: 1;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
+    color: #000;
+    font-weight: 600
 }
 
 .design_main2 h2 {
@@ -668,8 +650,8 @@ span {
     right: -30px;
     font-size: 395px;
     line-height: 1;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
+    color: #000;
+    font-weight: 600
 }
 
 .ablock {
@@ -678,77 +660,74 @@ span {
     left: 370px;
     pointer-events: none;
     opacity: 1;
-    transform: translateY(0px);
-    /* opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
+    transform: translateY(0)
 }
 
 .engaging {
     width: 100%;
-    background-color: rgb(204, 204, 204);
+    background-color: #ccc;
     min-height: 820px;
-    position: relative;
+    position: relative
 }
 
 .engaging_container {
     width: 1536px;
     position: relative;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .engaging_title {
     width: 100%;
-    padding: 140px 40px 0px 8px;
+    padding: 140px 40px 0 8px
 }
 
 .engaging_title h2 {
-    color: rgb(0, 0, 0);
+    color: #000;
     font-size: 128px;
     line-height: 150px;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .engaging_text {
     width: 100%;
-    margin: 60px 0px 0px;
+    margin: 60px 0 0
 }
 
 .engaging_text_container {
     width: 100%;
     max-width: 384px;
-    padding: 0px 16px;
+    padding: 0 16px
 }
 
 .engaging_text_container p {
-    color: rgb(0, 0, 0);
+    color: #000;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    margin: 0px;
+    margin: 0
 }
 
 .block_img {
     position: absolute;
     top: 200px;
-    right: 0px;
+    right: 0
 }
 
 .block_img img {
-    max-width: 1000px;
+    max-width: 1000px
 }
 
 .shining {
     width: 100%;
     min-height: 768px;
-    background: url(https://www.microsoft.com/design/fluent/assets/images/space.jpg) 50% center / cover no-repeat fixed rgb(0, 0, 0);
+    background: url(https://www.microsoft.com/design/fluent/assets/images/space.jpg) 50% center/cover no-repeat fixed #000
 }
 
 .shining_container {
     position: relative;
     z-index: 2;
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .shining_block1 {
@@ -757,10 +736,7 @@ span {
     left: 340px;
     pointer-events: none;
     opacity: 1;
-    transform: translateY(0px);
-    /* opacity: 0;
-transform: translateY(60px);
-transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
+    transform: translateY(0)
 }
 
 .shining_block2 {
@@ -769,10 +745,7 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     left: 165px;
     pointer-events: none;
     opacity: 1;
-    transform: translateY(0px);
-    /* opacity: 0;
-transform: translateY(20px);
-transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
+    transform: translateY(0)
 }
 
 .shining_block3 {
@@ -781,10 +754,7 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     left: 620px;
     pointer-events: none;
     opacity: 1;
-    transform: translateY(0px);
-    /* opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
+    transform: translateY(0)
 }
 
 .shining_block4 {
@@ -793,10 +763,7 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     right: 85px;
     pointer-events: none;
     opacity: 1;
-    transform: translateY(0px);
-    /* opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
+    transform: translateY(0)
 }
 
 .shining_block5 {
@@ -805,30 +772,27 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     right: 220px;
     pointer-events: none;
     opacity: 1;
-    transform: translateY(-100px);
-    /* opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
+    transform: translateY(-100px)
 }
 
 .four_link {
     position: relative;
     width: 100%;
     z-index: 1;
-    margin: 0px 0px 160px;
+    margin: 0 0 160px
 }
 
 .four_link_container {
     position: relative;
     z-index: 2;
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .four_link_block {
     width: 100%;
     display: flex;
-    position: relative;
+    position: relative
 }
 
 .four_link_block1 {
@@ -836,7 +800,7 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     height: 384px;
     position: relative;
     z-index: 2;
-    background-color: rgb(0, 0, 0);
+    background-color: #000
 }
 
 .four_link_block1 a {
@@ -845,58 +809,58 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     height: 100%;
     width: 100%;
     text-decoration: none;
-    transition: background-color 200ms linear 0ms;
+    transition: background-color .2s linear 0s
 }
 
 .link_block1_text {
     width: 100%;
     padding: 16px;
     flex: 1 1 auto;
-    margin: 2px 0px 0px;
-    color: rgb(255, 255, 255);
-    transition: color 200ms linear 0ms;
+    margin: 2px 0 0;
+    color: #fff;
+    transition: color .2s linear 0s
 }
 
 .link_block1_text p {
     font-size: 32px;
     line-height: 40px;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .link_block1_text1 {
     width: 100%;
     display: flex;
     padding: 16px;
-    flex: 0 0 auto;
+    flex: 0 0 auto
 }
 
 .icon_text1 {
     width: 24px;
     flex: 0 0 auto;
-    margin: 0px 16px 0px 0px;
-    padding: 0;
+    margin: 0 16px 0 0;
+    padding: 0
 }
 
 .icon_text1 svg {
     max-width: 20px;
-    height: auto;
+    height: auto
 }
 
 .icon_text1 svg path {
-    fill: rgb(255, 255, 255);
-    transition: fill 200ms linear 0ms;
+    fill: #fff;
+    transition: fill .2s linear 0s
 }
 
 .link_block1_text2 {
     -webkit-box-align: center;
     align-items: center;
     flex: 1 1 auto;
-    padding: 0;
+    padding: 0
 }
 
 .link_block1_text2 label {
-    color: rgb(255, 255, 255);
-    transition: color 200ms linear 0ms;
+    color: #fff;
+    transition: color .2s linear 0s
 }
 
 .four_link_block2 {
@@ -904,7 +868,7 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     height: 384px;
     position: relative;
     z-index: 2;
-    background-color: rgb(57, 57, 57);
+    background-color: #393939
 }
 
 .four_link_block2 a {
@@ -913,56 +877,56 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     height: 100%;
     width: 100%;
     text-decoration: none;
-    transition: background-color 200ms linear 0ms;
+    transition: background-color .2s linear 0s
 }
 
 .link_block2_text {
     width: 100%;
     padding: 16px;
     flex: 1 1 auto;
-    margin: 2px 0px 0px;
+    margin: 2px 0 0
 }
 
 .link_block2_text p {
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
-    color: rgb(255, 255, 255);
-    transition: color 200ms linear 0ms;
+    color: #fff;
+    transition: color .2s linear 0s
 }
 
 .link_block2_text1 {
     width: 100%;
     display: flex;
     padding: 16px;
-    flex: 0 0 auto;
+    flex: 0 0 auto
 }
 
 .icon_text2 {
     width: 24px;
     flex: 0 0 auto;
-    margin: 0px 16px 0px 0px;
+    margin: 0 16px 0 0
 }
 
 .icon_text2 svg {
     max-width: 20px;
-    height: auto;
+    height: auto
 }
 
 .icon_text2 svg path {
-    fill: rgb(255, 255, 255);
-    transition: fill 200ms linear 0ms;
+    fill: #fff;
+    transition: fill .2s linear 0s
 }
 
 .link_block2_text2 {
     -webkit-box-align: center;
     align-items: center;
-    flex: 1 1 auto;
+    flex: 1 1 auto
 }
 
 .link_block2_text2 label {
-    color: rgb(255, 255, 255);
-    transition: color 200ms linear 0ms;
+    color: #fff;
+    transition: color .2s linear 0s
 }
 
 .four_link_block3 {
@@ -970,7 +934,7 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     height: 384px;
     position: relative;
     z-index: 2;
-    background-color: rgb(118, 118, 118);
+    background-color: #767676
 }
 
 .four_link_block3 a {
@@ -979,56 +943,56 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     height: 100%;
     width: 100%;
     text-decoration: none;
-    transition: background-color 200ms linear 0ms;
+    transition: background-color .2s linear 0s
 }
 
 .link_block3_text {
     width: 100%;
     padding: 16px;
     flex: 1 1 auto;
-    margin: 2px 0px 0px;
+    margin: 2px 0 0
 }
 
 .link_block3_text p {
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
-    color: rgb(0, 0, 0);
-    transition: color 200ms linear 0ms;
+    color: #000;
+    transition: color .2s linear 0s
 }
 
 .link_block3_text1 {
     width: 100%;
     display: flex;
     padding: 16px;
-    flex: 0 0 auto;
+    flex: 0 0 auto
 }
 
 .icon_text3 {
     width: 24px;
     flex: 0 0 auto;
-    margin: 0px 16px 0px 0px;
+    margin: 0 16px 0 0
 }
 
 .icon_text3 svg {
     max-width: 20px;
-    height: auto;
+    height: auto
 }
 
 .icon_text3 svg path {
-    fill: rgb(255, 255, 255);
-    transition: fill 200ms linear 0ms;
+    fill: #fff;
+    transition: fill .2s linear 0s
 }
 
 .link_block3_text2 {
     -webkit-box-align: center;
     align-items: center;
-    flex: 1 1 auto;
+    flex: 1 1 auto
 }
 
 .link_block3_text2 label {
-    color: rgb(0, 0, 0);
-    transition: color 200ms linear 0ms;
+    color: #000;
+    transition: color .2s linear 0s
 }
 
 .four_link_block4 {
@@ -1036,7 +1000,7 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     height: 384px;
     position: relative;
     z-index: 2;
-    background-color: rgb(204, 204, 204);
+    background-color: #ccc
 }
 
 .four_link_block4 a {
@@ -1045,132 +1009,132 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     height: 100%;
     width: 100%;
     text-decoration: none;
-    transition: background-color 200ms linear 0ms;
+    transition: background-color .2s linear 0s
 }
 
 .link_block4_text {
     width: 100%;
     padding: 16px;
     flex: 1 1 auto;
-    margin: 2px 0px 0px;
+    margin: 2px 0 0
 }
 
 .link_block4_text p {
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
-    color: rgb(0, 0, 0);
-    transition: color 200ms linear 0ms;
+    color: #000;
+    transition: color .2s linear 0s
 }
 
 .link_block4_text1 {
     width: 100%;
     display: flex;
     padding: 16px;
-    flex: 0 0 auto;
+    flex: 0 0 auto
 }
 
 .icon_text4 {
     width: 24px;
     flex: 0 0 auto;
-    margin: 0px 16px 0px 0px;
+    margin: 0 16px 0 0
 }
 
 .icon_text4 svg {
     max-width: 20px;
-    height: auto;
+    height: auto
 }
 
 .icon_text4 svg path {
-    fill: rgb(255, 255, 255);
-    transition: fill 200ms linear 0ms;
+    fill: #fff;
+    transition: fill .2s linear 0s
 }
 
 .link_block4_text2 {
     -webkit-box-align: center;
     align-items: center;
-    flex: 1 1 auto;
+    flex: 1 1 auto
 }
 
 .link_block4_text2 label {
-    color: rgb(0, 0, 0);
-    transition: color 200ms linear 0ms;
+    color: #000;
+    transition: color .2s linear 0s
 }
 
 .two_text_block {
-    width: 100%;
+    width: 100%
 }
 
 .two_text_block_container {
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .two_text_main {
-    width: 100%;
+    width: 100%
 }
 
 .mainblock {
     width: 100%;
     display: flex;
-    padding: 0px 0px 200px;
+    padding: 0 0 200px
 }
 
 .left_block {
     width: 575px;
-    flex: 0 0 auto;
+    flex: 0 0 auto
 }
 
 .left_block h2 {
     font-size: 32px;
     line-height: 40px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-weight: 600;
-    padding: 0px 0px 0px 16px;
+    padding: 0 0 0 16px
 }
 
 .right_block {
     flex: 1 1 auto;
-    padding: 0px 330px 35px 208px;
+    padding: 0 330px 35px 208px
 }
 
 .right_block_text {
-    width: 100%;
+    width: 100%
 }
 
 .right_block_text p {
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .rightdown {
     width: 100%;
-    margin: 70px 0px 0px;
+    margin: 70px 0 0
 }
 
 .rightdown a {
     display: flex;
     width: 100%;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+    color: #fff;
+    text-decoration: none
 }
 
 .rightdown a img {
-    margin: 0px 16px 0px 0px;
+    margin: 0 16px 0 0
 }
 
 .rightdown a img span {
     font-size: 16px;
     font-family: "Segoe UI Mono", mono;
-    letter-spacing: 0.01rem;
-    line-height: 1;
+    letter-spacing: .01rem;
+    line-height: 1
 }
 
 .endfooter {
     width: 100%;
-    height: 48px;
+    height: 48px
 }
 
 .footer_content {
@@ -1178,7 +1142,7 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     -webkit-box-pack: justify;
     justify-content: space-between;
     width: 1536px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
 .footer_icon {
@@ -1189,41 +1153,41 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     justify-content: flex-start;
     -webkit-box-align: center;
     align-items: center;
-    flex: 0 0 auto;
+    flex: 0 0 auto
 }
 
 .footer_icon a {
-    opacity: 1;
+    opacity: 1
 }
 
 .footer_icon a svg {
-    width: 16px;
+    width: 16px
 }
 
 .footer_icon a svg .microsoft-red {
-    fill: rgb(255, 255, 255);
-    transition: all 200ms linear 0ms;
+    fill: #fff;
+    transition: all .2s linear 0s
 }
 
 .footer_icon a svg .microsoft-green {
-    fill: rgb(255, 255, 255);
-    transition: all 200ms linear 0ms;
+    fill: #fff;
+    transition: all .2s linear 0s
 }
 
 .footer_icon a svg .microsoft-blue {
-    fill: rgb(255, 255, 255);
-    transition: all 200ms linear 0ms;
+    fill: #fff;
+    transition: all .2s linear 0s
 }
 
 .footer_icon a svg .microsoft-yellow {
-    fill: rgb(255, 255, 255);
-    transition: all 200ms linear 0ms;
+    fill: #fff;
+    transition: all .2s linear 0s
 }
 
 .footerlink {
     height: 48px;
     flex: 1 1 auto;
-    padding: 0px 100px 0px 0px;
+    padding: 0 100px 0 0
 }
 
 .footerlink_block {
@@ -1231,138 +1195,138 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none
 }
 
 .footerlink_block li {
     width: auto;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 12px;
     line-height: 48px;
     font-weight: 400;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 .footerlink_block li a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     position: relative;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .footerlink_block li a::after {
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     bottom: -6px;
     width: 100%;
     opacity: 0;
     height: 1px;
-    background-color: rgb(255, 255, 255);
-    transition: all 200ms linear 0ms;
+    background-color: #fff;
+    transition: all .2s linear 0s
 }
 
 .footerlink_block1 {
     width: auto;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 12px;
     line-height: 48px;
     font-weight: 400;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 .footerlink_block1 a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     position: relative;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .footerlink_block2 {
     width: auto;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 12px;
     line-height: 48px;
     font-weight: 400;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 .footerlink_block2 a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     position: relative;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .footerlink_block3 {
     width: auto;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 12px;
     line-height: 48px;
     font-weight: 400;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 .footerlink_block3 a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     position: relative;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .footerlink_block4 {
     width: auto;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 12px;
     line-height: 48px;
     font-weight: 400;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 .footerlink_block4 a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     position: relative;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .footerlink_block5 {
     width: auto;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 12px;
     line-height: 48px;
     font-weight: 400;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 .footerlink_block5 a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     position: relative;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .footerlink_block6 {
     width: auto;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 12px;
     line-height: 48px;
     font-weight: 400;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 .footerlink_block6 a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     position: relative;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .five_icon {
     display: flex;
-    height: 48px;
+    height: 48px
 }
 
 .icon1 {
@@ -1372,16 +1336,16 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     -webkit-box-pack: end;
     justify-content: flex-end;
     -webkit-box-align: center;
-    align-items: center;
+    align-items: center
 }
 
 .icon1 svg {
-    width: 20px;
+    width: 20px
 }
 
 .icon1 svg g path {
-    fill: rgb(255, 255, 255);
-    transition: fill 200ms linear 0ms;
+    fill: #fff;
+    transition: fill .2s linear 0s
 }
 
 .icon2 {
@@ -1391,16 +1355,16 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     -webkit-box-pack: end;
     justify-content: flex-end;
     -webkit-box-align: center;
-    align-items: center;
+    align-items: center
 }
 
 .icon2 svg {
-    width: 20px;
+    width: 20px
 }
 
 .icon2 svg g path {
-    fill: rgb(255, 255, 255);
-    transition: fill 200ms linear 0ms;
+    fill: #fff;
+    transition: fill .2s linear 0s
 }
 
 .icon3 {
@@ -1410,16 +1374,16 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     -webkit-box-pack: end;
     justify-content: flex-end;
     -webkit-box-align: center;
-    align-items: center;
+    align-items: center
 }
 
 .icon3 svg {
-    width: 20px;
+    width: 20px
 }
 
 .icon3 svg g path {
-    fill: rgb(255, 255, 255);
-    transition: fill 200ms linear 0ms;
+    fill: #fff;
+    transition: fill .2s linear 0s
 }
 
 .icon4 {
@@ -1429,16 +1393,16 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     -webkit-box-pack: end;
     justify-content: flex-end;
     -webkit-box-align: center;
-    align-items: center;
+    align-items: center
 }
 
 .icon4 svg {
-    width: 20px;
+    width: 20px
 }
 
 .icon4 svg g path {
-    fill: rgb(255, 255, 255);
-    transition: fill 200ms linear 0ms;
+    fill: #fff;
+    transition: fill .2s linear 0s
 }
 
 .icon5 {
@@ -1448,14 +1412,14 @@ transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
     -webkit-box-pack: end;
     justify-content: flex-end;
     -webkit-box-align: center;
-    align-items: center;
+    align-items: center
 }
 
 .icon5 svg {
-    width: 20px;
+    width: 20px
 }
 
 .icon5 svg g path {
-    fill: rgb(255, 255, 255);
-    transition: fill 200ms linear 0ms;
+    fill: #fff;
+    transition: fill .2s linear 0s
 }

@@ -1,129 +1,129 @@
-@media (max-width: 1280px) {
+@media (max-width:1280px) {
     .nav_container {
-        width: 960px;
+        width: 960px
     }
-
-    .container_block{
-        width: 960px;
+    .container_block {
+        width: 960px
     }
-
-    .text_block{
+    .text_block {
+        width: 50%
+    }
+    .pic_block {
         width: 50%;
+        padding: 0 40px
     }
-
-    .pic_block{
-        width: 50%;
-        padding: 0px 40px;
+    .pic_block img {
+        max-width: 100%
     }
-
-    .pic_block img{
-        max-width: 100%;
+    .pic_block1 {
+        display: none
     }
-
-    .pic_block1{
-        display: none;
+    .pic_block2 {
+        display: none
     }
-
-    .pic_block2{
-        display: none;
-    }
-
     .info .container {
-        width: 960px;
+        width: 960px
     }
-
-    .info_text_img{
-        padding: 0px 30px;
+    .info_text_img {
+        padding: 0 30px
     }
-
-    .info_text_img span{
-        font-size: 14px;
+    .info_text_img span {
+        font-size: 14px
     }
-
     .parallax {
-        min-height: 668px;
+        min-height: 668px
     }
-
     .pa_container {
-        width: 960px;
+        width: 960px
     }
-
-    .pa_mask{
-        padding: 20px 0px 60px;
+    .pa_mask {
+        padding: 20px 0 60px
     }
-
-    .pa_mainermask{
-        margin: 0px;
+    .pa_mainermask {
+        margin: 0
     }
-
-    .pa_mainer{
-        margin: 0px;
-    padding: 0px 5px;
+    .pa_mainer {
+        margin: 0;
+        padding: 0 5px
     }
-
-    .ball_container{
-        width: 960px;
+    .ball_container {
+        width: 960px
     }
-
-    .text_container{
-        width: 960px;
+    .text_container {
+        width: 960px
     }
-
-    .pic_text{
-        width: 960px;
+    .pic_text {
+        width: 960px
     }
-
-    .pic_text h2{
-    font-size: 96px;
-    line-height: 104px;
+    .pic_text h2 {
+        font-size: 96px;
+        line-height: 104px
     }
-
-    .design_pic{
-        min-height: 668px;
+    .design_pic {
+        min-height: 668px
     }
-
-    .design_container{
-        width: 960px;
+    .design_container {
+        width: 960px
     }
-
-    .design_main1 h2{
+    .design_main1 h2 {
         font-size: 228px;
-    top: 40px;
-    left: 14px;
+        top: 40px;
+        left: 14px
     }
-
-    .design_main2 h2{
+    .design_main2 h2 {
         font-size: 228px;
         top: 220px;
-        right: 10px;
+        right: 10px
     }
-
-    .ablock{
-        display: none;
+    .ablock {
+        display: none
     }
-
-    .engaging{
-        min-height: 668px;
+    .engaging {
+        min-height: 668px
     }
-
-    .engaging_container{
-        width: 960px;
+    .engaging_container {
+        width: 960px
     }
-
-    .engaging_title{
-        padding: 29px 0px 0px;
+    .engaging_title {
+        padding: 29px 0 0
     }
-
-    .engaging_title h2{
+    .engaging_title h2 {
         font-size: 96px;
-        line-height: 104px;
+        line-height: 104px
     }
-
-    .shining{
-        min-height: 668px;
+    .shining {
+        min-height: 668px
     }
-
-    .shining_container{
+    .shining_container {
+        width: 960px
+    }
+    .four_link_container {
         width: 960px;
+    }
+    .link_block1_text p {
+        font-size: 28px;
+    }
+    .link_block2_text p {
+        font-size: 28px;
+    }
+
+    .link_block3_text p{
+        font-size: 28px;
+    }
+
+    .link_block4_text p{
+        font-size: 28px;
+    }
+
+    .two_text_block_container{
+        width: 960px;
+    }
+
+    .footer_content{
+        width: 960px;
+    }
+
+    .footer_icon{
+        width: 40px;
     }
 }

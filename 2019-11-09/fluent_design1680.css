@@ -1,74 +1,72 @@
-@media (max-width: 1680px) {
-
+@media (max-width:1680px) {
     .nav_container {
-        width: 1336px;
+        width: 1336px
     }
-   
-    .container_block{
-        width: 1336px;
+    .container_block {
+        width: 1336px
     }
-
-    .pic_block1{
+    .pic_block1 {
         top: -40px;
-        right: 36px;
+        right: 36px
     }
-
-    .pic_block2{
+    .pic_block2 {
         bottom: 160px;
-    left: 30px;
+        left: 30px
     }
-
     .info .container {
-        width: 1336px;
+        width: 1336px
     }
-    
     .pa_container {
-        width: 1336px;
+        width: 1336px
     }
-
-    .ball_block{
-        right: 30px;
+    .ball_block {
+        right: 30px
     }
-
-    .text_container{
-        width: 1336px;
+    .text_container {
+        width: 1336px
     }
-
-    .pic_text{
-        width: 1336px;
+    .pic_text {
+        width: 1336px
     }
-
-    .pic_text h2{
+    .pic_text h2 {
         font-size: 96px;
-    line-height: 128px;
+        line-height: 128px
     }
-
-    .design_container{
-        width: 1336px;
+    .design_container {
+        width: 1336px
     }
-
-    .design_main1 h2{
+    .design_main1 h2 {
         top: -40px;
-        font-size: 295px;
+        font-size: 295px
     }
-
-    .design_main2 h2{
+    .design_main2 h2 {
         top: 120px;
-    right: -30px;
-    font-size: 295px;
+        right: -30px;
+        font-size: 295px
     }
-
-    .engaging_container{
+    .engaging_container {
+        width: 1336px
+    }
+    .block_img img {
+        max-width: 50vw
+    }
+    .shining_container {
+        width: 1336px
+    }
+    .four_link_container {
         width: 1336px;
     }
-
-    .block_img img{
-        max-width: 50vw;
+    .two_text_block_container {
+        width: 1336px;
     }
-
-    .shining_container{
+    .left_block {
+        width: 50%;
+    }
+    .right_block {
+        width: 50%;
+        padding: 0px 16px 35px;
+    }
+    .footer_content {
         width: 1336px;
     }
 }
-
-

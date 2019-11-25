@@ -1,71 +1,94 @@
-@media (max-width: 960px) {
+@media (max-width:960px) {
     .nav_container {
         width: 100%;
-    padding: 0px 30px;
+        padding: 0 30px
+    }
+    .container_block {
+        width: 100%;
+        padding: 0 30px
+    }
+    .text_block {
+        width: 60%
+    }
+    .text_pb {
+        width: 100%;
+        max-width: 352px
+    }
+    .pic_block {
+        width: 40%;
+        padding: 0 0 0 30px
+    }
+    .parallax {
+        background-attachment: scroll
+    }
+    .pa_container {
+        width: 100%;
+        padding: 0 30px
+    }
+    .ball_container {
+        width: 100%;
+        padding: 0 30px
+    }
+    .text_container {
+        width: 100%;
+        padding: 0 30px
+    }
+    .text_block_right {
+        padding: 0
+    }
+    .design_pic {
+        background-attachment: scroll
+    }
+    .design_container {
+        width: 100%;
+        padding: 0 30px
+    }
+    .engaging_container {
+        width: 100%;
+        padding: 0 30px 40px
+    }
+    .shining {
+        background-attachment: scroll
+    }
+    .shining_container {
+        width: 100%;
+        padding: 0 30px
+    }
+    .four_link {
+        margin: 0px;
+    }
+    .four_link_container {
+        width: 100%;
+    }
+    .two_text_block_container {
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .mainblock {
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .left_block {
+        width: 100%;
+        margin: 30px 0px;
+    }
+    .left_block h2 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .right_block {
+        width: 100%;
+        padding: 0px 0px 35px;
+    }
+    .rightdown {
+        margin: 30px 0px 0px;
+    }
+    .rightdown a img span {
+        font-size: 12px;
     }
 
-.container_block{
-    width: 100%;
-    padding: 0px 30px;
-}
-
-.text_block{
-    width: 60%;
-}
-
-.text_pb{
-    width: 100%;
-    max-width: 352px;
-}
-
-.pic_block{
-    width: 40%;
-    padding: 0px 0px 0px 30px;
-}
-
-.parallax {
-    background-attachment: scroll;
-}
-
-.pa_container {
-    width: 100%;
-    padding: 0px 30px;
-}
-
-.ball_container{
-    width: 100%;
-    padding: 0px 30px;
-}
-
-.text_container{
-    width: 100%;
-    padding: 0px 30px;
-}
-
-.text_block_right{
-    padding: 0px;
-}
-
-.design_pic{
-    background-attachment: scroll;
-}
-
-.design_container{
-    width: 100%;
-    padding: 0px 30px;
-}
-
-.engaging_container{
-    width: 100%;
-    padding: 0px 30px 40px;
-}
-
-.shining{
-    background-attachment: scroll;
-}
-
-.shining_container{
-    width: 100%;
-    padding: 0px 30px;
-}
+    .footer_content{
+        width: 100%;
+        padding: 0px 30px;
     }
+}

@@ -1,6 +1,5 @@
-@media (max-width: 1940px) {
-    
-    .block_img img{
-        max-width: 900px;
+@media (max-width:1940px) {
+    .block_img img {
+        max-width: 900px
     }
-    }
+}
