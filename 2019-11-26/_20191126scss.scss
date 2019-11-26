@@ -1,0 +1,27 @@
+&.content-title {
+    padding: 10px;
+    background-color: grey;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    left: calc(50% - 128px);
+    top: calc(50% - 19px);
+    letter-spacing: 5px;
+    font-family: 'Zhi Mang Xing', cursive;
+}
+&.content-text {
+    text-align: justify;
+    color: gray;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Sacramento', cursive;
+}
+&.content-banner{
+    width: 100%;
+    height: 100vh;
+}
+&.mask{
+    width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.53);
+}

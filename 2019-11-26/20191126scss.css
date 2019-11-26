@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  height: 3000px;
+}
+
+#banner-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+#banner-1 .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.53);
+}
+
+#banner-1 .index-banner {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner-1 .index-title {
+  padding: 10px;
+  background-color: grey;
+  font-size: 32px;
+  color: white;
+  position: absolute;
+  left: calc(50% - 142px);
+  top: calc(50% - 19px);
+  letter-spacing: 5px;
+  font-family: 'Zhi Mang Xing', cursive;
+}
+
+#content-1 {
+  padding: 30px;
+}
+
+#content-1 .content-title {
+  text-align: center;
+  color: red;
+  font-family: 'Sacramento', cursive;
+}
+
+#content-1 .content-text {
+  text-align: justify;
+  color: gray;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: 'Sacramento', cursive;
+}
+
+#banner-2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+#banner-2 .contene-banner {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner-2 .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.53);
+}
+
+#banner-2 .content-title {
+  padding: 10px;
+  background-color: grey;
+  font-size: 32px;
+  color: white;
+  position: absolute;
+  left: calc(50% - 128px);
+  top: calc(50% - 19px);
+  letter-spacing: 5px;
+  font-family: 'Zhi Mang Xing', cursive;
+}
+
+#content-2 {
+  padding: 30px;
+}
+
+#content-2 .content-text {
+  text-align: justify;
+  color: gray;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: 'Sacramento', cursive;
+}
+
+#banner-3 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.w3schools.com/howto/img_parallax3.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+#banner-3 .contene-banner {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner-3 .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.53);
+}
+
+#banner-3 .content-title {
+  padding: 10px;
+  background-color: grey;
+  font-size: 32px;
+  color: white;
+  position: absolute;
+  left: calc(50% - 128px);
+  top: calc(50% - 19px);
+  letter-spacing: 5px;
+  font-family: 'Zhi Mang Xing', cursive;
+}
+
+#content-3 {
+  padding: 30px;
+}
+
+#content-3 .content-text {
+  text-align: justify;
+  color: gray;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: 'Sacramento', cursive;
+}
+
+#footer {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+#footer .footer-banner {
+  width: 100%;
+  height: 100vh;
+}
+
+#footer .footer-banner .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.53);
+}
+
+#footer .footer-title {
+  padding: 10px;
+  background-color: grey;
+  font-size: 32px;
+  color: white;
+  position: absolute;
+  left: calc(50% - 92px);
+  top: calc(50% - 19px);
+  letter-spacing: 5px;
+  font-family: 'Zhi Mang Xing', cursive;
+}
+/*# sourceMappingURL=20191126scss.css.map */

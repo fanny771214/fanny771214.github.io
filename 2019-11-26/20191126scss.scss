@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    height: 3000px;
+}
+#banner-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;    
+    .mask {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.53);
+    }
+   
+    .index-banner{
+        width: 100%;
+            height: 100vh;
+    }
+    .index-title{
+        padding: 10px;
+            background-color: grey;
+            font-size: 32px;
+            color: white;
+            position: absolute;
+            left: calc(50% - 142px);
+            top: calc(50% - 19px);
+            letter-spacing: 5px;
+            font-family: 'Zhi Mang Xing', cursive;
+    }
+}
+
+#content-1{
+    padding: 30px;
+    .content-title{
+        text-align: center;
+            color: red;
+            font-family: 'Sacramento', cursive;
+    }
+    .content-text {
+        text-align: justify;
+        color: gray;
+        line-height: 1.5;
+        font-size: 18px;
+        font-family: 'Sacramento', cursive;
+    }
+    
+}
+#banner-2{
+    width: 100%;
+            height: 100vh;
+            background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+   .contene-banner{
+    width: 100%;
+    height: 100vh;
+        }
+        .mask{
+            width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.53);
+                          }
+                          .content-title{
+                            padding: 10px;
+                            background-color: grey;
+                            font-size: 32px;
+                            color: white;
+                            position: absolute;
+                            left: calc(50% - 128px);
+                            top: calc(50% - 19px);
+                            letter-spacing: 5px;
+                            font-family: 'Zhi Mang Xing', cursive;
+                            }   
+            }
+
+#content-2{
+    padding: 30px;
+    .content-text{
+        text-align: justify;
+            color: gray;
+            line-height: 1.5;
+            font-size: 18px;
+            font-family: 'Sacramento', cursive;
+     }    
+}
+
+#banner-3{
+    width: 100%;
+            height: 100vh;
+            background-image: url("https://www.w3schools.com/howto/img_parallax3.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+            .contene-banner{
+            width: 100%;
+            height: 100vh;
+                        }
+                        .mask{
+                            width: 100%;
+                                height: 100%;
+                                background-color: rgba(255, 255, 255, 0.53);
+                            
+                            }
+                            .content-title{
+                                padding: 10px;
+                                background-color: grey;
+                                font-size: 32px;
+                                color: white;
+                                position: absolute;
+                                left: calc(50% - 128px);
+                                top: calc(50% - 19px);
+                                letter-spacing: 5px;
+                                font-family: 'Zhi Mang Xing', cursive;
+                            }
+            }
+#content-3{
+    padding: 30px;
+    .content-text{
+        text-align: justify;
+            color: gray;
+            line-height: 1.5;
+            font-size: 18px;
+            font-family: 'Sacramento', cursive;
+    }
+}
+
+#footer{
+    width: 100%;
+            height: 100vh;
+            background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+            .footer-banner{
+                width: 100%;
+            height: 100vh;
+            .mask{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.53);
+            }
+            
+            }
+            .footer-title{
+                padding: 10px;
+                background-color: grey;
+                font-size: 32px;
+                color: white;
+                position: absolute;
+                left: calc(50% - 92px);
+                top: calc(50% - 19px);
+                letter-spacing: 5px;
+                font-family: 'Zhi Mang Xing', cursive;
+            }
+}
