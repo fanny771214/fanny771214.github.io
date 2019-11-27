@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        width: 100%;
+        height: 15vh;
+        background-color: antiquewhite;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 85vh;        
+    }
+
+    .mask{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.199);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+       height: 100%;        
+    }
+</style>
+
+<body>
+    <nav>
+
+    </nav>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="mask">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeiiwGHT23wC1fanlmiCkuVDi8GVNyjsqk9OljYAsZqx5fKxk1&s" alt="">
+                </div>
+            </div>
+                <div class="swiper-slide">
+                        <div class="mask">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1MdPrCuDllaGsQwL6yf2QhYpwO-7urkjQizVuD2mtLyvC0lnnrg&s" alt="">
+                            </div>
+                </div>
+                <div class="swiper-slide">
+                        <div class="mask">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRA8GqgR0acaaxaB5YcN_IyBh6IpGAFathnGJFvFyaEVIIAM56Fw&s" alt="">
+                            </div>
+                </div>
+                <div class="swiper-slide">
+                        <div class="mask">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm4LRMu5hiHOKWXS7H9M11d_YB18dQf_-5f0lR4MSzg64TwEyh&s" alt="">
+                            </div>
+                </div>
+                <div class="swiper-slide">
+                        <div class="mask">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW8FTrbuJWB-JbWm89UU3ArJS6SHwfBpXpz8E1z0EQyz07ES2g&s" alt="">
+                            </div>
+                </div>
+                <div class="swiper-slide">
+                        <div class="mask">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkOYyHgOkx9Jvzczw-p78pO3tdkIcpjP2XZDpa6RLatzTz58__DA&s" alt="">
+                            </div>
+                </div>                
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
+
+</body>
+
+</html>
