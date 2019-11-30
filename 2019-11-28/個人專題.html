@@ -11,6 +11,7 @@
     <!-- <link rel="icon" href="images/logo.png"> -->
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="個人專題.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
 </head>
 
@@ -28,20 +29,19 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#Welcome">Welcome</a>
+                        <a class="nav-link" href="#Welcome">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.holiday.com.tw/InvestmentV2/msg.aspx">Corporate
-                            Philosophy</a>
+                        <a class="nav-link" href="https://www.holiday.com.tw/InvestmentV2/msg.aspx">關於好樂迪</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Promotions">Promotions</a>
+                        <a class="nav-link" href="#Promotions">新歌快訊</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Reservation">Reservation</a>
+                        <a class="nav-link" href="#Reservation">線上訂位</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#OurLocation">Our Location</a>
+                        <a class="nav-link" href="#OurLocation">門市資訊</a>
                     </li>
                     <li class="nav-item">
                         <a href="it/index.html" class="language" rel="it-IT"></a>
@@ -62,14 +62,14 @@
                 <div class="carousel-item active">
                     <!-- <img class="d-block w-100 img-fluid img-slider" src="images/slider1.jpg" alt="First slide"> -->
                     <div class="carousel-caption">
-                        <h2>Welcome!</h2>
+                        <h2>首頁</h2>
                         <p>...</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <!-- <img class="d-block w-100 img-fluid img-slider" src="images/slider2.jpg" alt="Second slide"> -->
                     <div class="carousel-caption">
-                        <h2>Traditional Italian Cuisine</h2>
+                        <h2></h2>
                         <p>...</p>
                     </div>
                 </div>
@@ -92,11 +92,11 @@
         </div>
     </div>
     <!--- End of Carousel -->
-    
+
     <div class="container">
         <div class="row">
             <div class="col navMenu">
-                <h2 class="text-center">~ Event information ~</h2>
+                <h2 class="text-center">~ 優惠活動 ~</h2>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -140,9 +140,33 @@
             </div> -->
         <!--- End of Restaurant -->
         <!--- Start of Menu-->
-        <div class="row" id="Messege">
+        <div class="row" id="Promotions">
             <div class="col navMessege">
-                <h2 class="text-center">~ Messege ~</h2>
+                <h2 class="text-center">~ 新歌快報 ~</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
+                            tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                            malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
+                            tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                            malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum
+                            id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                            condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- <div class="row bg-light">
@@ -196,7 +220,7 @@
         <!--- Start of Reservation-->
         <div class="row" id="Reservation">
             <div class="col navMenu">
-                <h2 class="text-center">~ Reservation ~</h2>
+                <h2 class="text-center">~ 線上訂位 ~</h2>
             </div>
         </div>
         <div class="row">
@@ -266,12 +290,12 @@
         <!--- Start of Our Location -->
         <div class="row" id="OurLocation">
             <div class="col navMenu">
-                <h2 class="text-center">~ Our Location ~</h2>
+                <h2 class="text-center">~ 門市資訊 ~</h2>
             </div>
         </div>
         <div class="row">
             <div id="map" class="col-md-9 map"></div>
-            <div class="col-md-3">
+            <div class="col-md-3 map" id="map" >
                 <h3>Address:</h3>
                 <p>Viale Enrico Fermi, 20159 Milan, Mailand (Lombardia) </p>
                 <h3>Email:</h3>
@@ -320,6 +344,7 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFZjOV0KA68G2YAh-rn7I3qKqCQEh_Ja0&callback=myMap">
         </script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             spaceBetween: 30,

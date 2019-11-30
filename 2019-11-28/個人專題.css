@@ -1,10 +1,16 @@
 body{
-    font-family: 'Merienda';font-size: 15px;
+    font-family: '標楷體';font-size: 28px;
+    box-sizing: border-box;
+    background-image: url('../2019-11-28/img/youth-570881_960_720.webp');
+    background-size: cover;
+    color:black;
 }
 .nav-item{
    padding-right: 12px;
    padding-left: 12px;
-}
+   font-family: '標楷體';
+   font-size: 28px;
+   }
 .flag{
    max-height: 20px;
    max-width: 20px;
@@ -12,6 +18,10 @@ body{
 }
 .nav-link.active{
    background-color: lightgrey !important;
+}
+
+.container{
+   
 }
 
 .reserve-container{
@@ -55,8 +65,8 @@ body{
 
 .swiper-container {
 	width: 100%;
-	height: 100%;
-}
+   height: 100%;
+   }
 
 .swiper-slide {
 	text-align: center;
@@ -66,17 +76,33 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.navMenu{
+
+img{
+   width: 100%;
+   
+   }
+   .navMenu{
+      padding-top: 75px;
+      padding-bottom: 20px;
+      background-color: #fff;
+   }
+
+.navMessege{
    padding-top: 75px;
    padding-bottom: 20px;
+   background-color: #fff;
 }
 
+#OurLocation{
+   background-color: #fff;
+}
 .card-img-top{
    height: 200px;
 }
 
 .map{
    height: 320px;
+   background-color: #fff;
 }
 
 @media screen and (max-width : 1920px){
