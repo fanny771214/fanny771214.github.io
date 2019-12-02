@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        /* .block {
+            width: 150px;
+            height: 150px;
+            background-color: aquamarine;
+            position: relative;
+            left: 0;
+            top: 0;
+
+            animation-name: blockMove;
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+
+        @keyframes blockMove {
+            10% {
+                left: 10%;
+            }
+
+            50%{
+                left: 50%;
+                background-color: salmon;
+            }
+
+            100% {
+                left: calc(100% - 150px);
+                background-color: red;
+            }
+        } */
+
+        /* #google_loading>div {
+            left: 50px;
+            width: 50px;
+            height: 100px;
+            border-radius: 0 50px 50px 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 10;
+            perspective: 200px;
+            transform: rotateY(0deg);
+            animation: bgColor1 4s linear infinite both, rotate 4s infinite both;
+            transform-origin: 0 50%;
+        }
+
+        @keyframes bgColor1 {
+            0% {
+                background: #ffd539;
+            }
+
+            50% {
+                background: #3a71f8;
+            }
+
+            100% {
+                background: #3a71f8;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            25% {
+                -webkit-transform: rotate(90deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(180deg);
+            }
+
+            75% {
+                -webkit-transform: rotate(270deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(0deg);
+            }
+        }
+
+        #google_loading>div:after {
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: -50px;
+            width: 50px;
+            height: 100px;
+            border-radius: 50px 0 0 50px;
+            background: #ccc;
+            animation: bgColor2 4s linear infinite both;
+        }
+
+        @keyframes bgColor2 {
+            0% {
+                background: #f52d27;
+            }
+
+            25% {
+                background: #00b262;
+            }
+
+            75% {
+                background: #f52d27;
+            }
+
+            100% {
+                background: #f52d27;
+            }
+        }
+
+        #google_loading>div:before {
+            content: '';
+            position: absolute;
+            z-index: 11;
+            top: 0;
+            left: 0px;
+            width: 50px;
+            height: 100px;
+            border-radius: 0 50px 50px 0;
+            transform-origin: 0 50%;
+            transform: rotateY(0deg) rotateZ(0deg);
+            animation: flipColor 4s linear infinite both, flip 4s linear infinite both;
+        }
+
+        @keyframes flip {
+            0% {
+                -webkit-transform: rotateY(0deg);
+            }
+
+            12.5% {
+                -webkit-transform: rotateY(90deg);
+            }
+
+            25% {
+                -webkit-transform: rotateY(180deg);
+            }
+
+            37.5% {
+                -webkit-transform: rotateY(90deg);
+            }
+
+            50% {
+                -webkit-transform: rotateY(0deg);
+            }
+
+            62.5% {
+                -webkit-transform: rotateY(90deg);
+            }
+
+            75% {
+                -webkit-transform: rotateY(180deg);
+            }
+
+            87.5% {
+                -webkit-transform: rotateY(90deg);
+            }
+
+            100% {
+                -webkit-transform: rotateY(0deg);
+            }
+        }
+
+        @keyframes flipColor {
+            0% {
+                background: #f52d27;
+            }
+
+            12.5% {
+                background: #7d0906;
+            }
+
+            25% {
+                background: #ffd539;
+            }
+
+            37.5% {
+                background: #9f7d00;
+            }
+
+            50% {
+                background: #00b262;
+            }
+
+            62.5% {
+                background: #00190e;
+            }
+
+            75% {
+                background: #3a71f8;
+            }
+
+            87.5% {
+                background: #052e94;
+            }
+
+            100% {
+                background: #f52d27;
+            }
+        } */
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: rgb(64, 88, 113);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hello_text {
+            font-size: 200PX;
+            font-family: 'Dancing Script', cursive;
+            letter-spacing: 5px;
+            color: silver;
+            position: relative;
+            text-shadow:
+                0px 0px 1px rgb(167, 167, 167),
+                0px 1px 1px rgb(167, 167, 167),
+                0px 2px 1px rgb(167, 167, 167),
+
+                -1px 1px 1px rgb(167, 167, 167),
+                -1px 2px 1px rgb(167, 167, 167),
+                -1px 3px 1px rgb(167, 167, 167),
+
+                -2px 2px 1px rgb(167, 167, 167),
+                -2px 3px 1px rgb(167, 167, 167),
+                -2px 4px 1px rgb(167, 167, 167),
+
+                -5px 5px 5px rgba(0, 0, 0, 0.7),
+
+                -1px 10px 30px rgba(0, 0, 0, 0.5),
+                -1px 10px 70px rgba(0, 0, 0, 0.5);
+        }
+
+        .hello_text::after {
+            content: "Hello!";
+            font-size: 200PX;
+            font-family: 'Dancing Script', cursive;
+            letter-spacing: 5px;
+            color: silver;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-shadow: 0px 0px 100px rgba(11, 124, 199, 0.7);
+            animation: cycle 10s liner infinite;
+        }
+
+        @keyframes cycle {
+            0%{
+                text-shadow: rgba(11, 124, 199, 0.8);
+            }
+
+            20%{
+                text-shadow: rgba(213, 46, 247, 0.8);
+            }
+
+            40%{
+                text-shadow: rgba(213, 46, 111, 0.8);
+            }
+
+            60%{
+                text-shadow: rgba(148, 150, 41, 0.8);
+            }
+
+            80%{
+                text-shadow: rgba(48, 150, 41, 0.8);
+        }}
+    </style>
+</head>
+
+<body>
+    <!-- <div class="block"></div> -->
+    <!-- <div id="google_loading">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq3hu1Wqxhx81KFGuMxr-V_d-rG-Cfk3a7T16jeiTbKW-YIvgJ" alt="">
+        </div>
+    </div> -->
+    <div class="hello_text">Hello!</div>
+
+
+</body>
+
+</html>
