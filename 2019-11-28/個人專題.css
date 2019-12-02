@@ -4,6 +4,7 @@ body{
     background-image: url('../2019-11-28/img/youth-570881_960_720.webp');
     background-size: cover;
     color:black;
+    background-position:center;
 }
 .nav-item{
    padding-right: 12px;
