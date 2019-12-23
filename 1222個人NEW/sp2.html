@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<span style="font-size:13px;">下拉式選單之兩框連動：<br>
+
+	組合名稱：
+	<select onChange="renew(this.selectedIndex);">
+		<option disabled=disabled selected=selected>LoveLive
+		<option>Printemps
+		<option>BiBi
+		<option>lily white
+	</select>
+
+	成員名字：
+	<select id="member">
+		<option value="0" disabled=disabled selected=selected>請先選取組合名稱
+	</select>
+	<input type="button" value="瀏覽所選取的聲優資料" onclick="TheWikiIntro()"></span>
+
+	<script>
+		CharacterVoice=new Array();
+		//Printemps
+		CharacterVoice[1]=["高坂穂乃果(CV:新田惠海)", "南ことり(CV:內田彩)", "小泉花陽(CV:久保由利香)"];
+		//BiBi
+		CharacterVoice[2]=["絢瀬絵里(CV:南條愛乃)", "西木野真姫(CV:Pile)", "矢澤にこ(CV:德井青空)"];
+		//lily white
+		CharacterVoice[3]=["園田海未(CV:三森鈴子)", "星空凛(CV:飯田里穗)", "東條希(CV:楠田亞衣奈)"];
+
+		//另用一個陣列記取上方CharacterVoice對應的value
+		CharacterWiki=new Array();
+		//Printemps
+		CharacterWiki[1]=["%E6%96%B0%E7%94%B0%E6%83%A0%E6%B5%B7", 
+		"%E5%85%A7%E7%94%B0%E5%BD%A9", 
+		"%E4%B9%85%E4%BF%9D%E7%99%BE%E5%90%88%E8%8A%B1"];
+		//BiBi
+		CharacterWiki[2]=["%E5%8D%97%E6%A2%9D%E6%84%9B%E4%B9%83", 
+		"Pile", 
+		"%E5%BE%B7%E4%BA%95%E9%9D%92%E7%A9%BA"];
+		//lily white
+		CharacterWiki[3]=["%E4%B8%89%E6%A3%AE%E9%93%83%E5%AD%90", 
+		"%E9%A3%AF%E7%94%B0%E9%87%8C%E7%A9%97", 
+		"%E6%A5%A0%E7%94%B0%E4%BA%9E%E8%A1%A3%E5%A5%88"];
+
+		function renew(index){
+			for(var i=0;i<CharacterVoice[index].length;i++)
+				//新增select的選項
+				member.options[i]=new Option(CharacterVoice[index][i], "https://zh.wikipedia.org/wiki/"+CharacterWiki[index][i]);
+			/*參考網站中筆者表示下面這行是為了「刪除多餘的選項」
+			然而我將之註解掉也可以正常執行，所以有沒有加這行的必要，個人還在理解中...*/
+			member.length=CharacterVoice[index].length;
+		}
+		function TheWikiIntro(){
+			if(member.options[member.selectedIndex].value=="0"){
+			}else{
+				window.open(member.options[member.selectedIndex].value);
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0 auto;
+            background-color: #eee;
+            box-sizing: border-box;
+        }
+
+        #all {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #tab_btn {
+            display: flex;
+        }
+
+        .tabs {
+            border: 2px solid;
+            padding: 10px 10px;
+            margin: 0 2px;
+            border-radius: 10px;
+            background-color: #666;
+            color: white;
+        }
+
+        .tabs.active {
+            background-color: white;
+            color: #666;
+        }
+
+        #tab_content {
+            position: relative;
+        }
+
+        .content {
+            /* display: none; */
+            opacity: 0;
+            pointer-events: none;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+            transition: 0.5s opacity;
+
+        }
+
+        .content.active {
+            /* display: block; */
+            opacity: 1;
+            pointer-events: all;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <div id="tab_btn">
+            <div id="tab_btn_1" class="tabs active">Tab_1</div>
+            <div id="tab_btn_2" class="tabs">Tab_2</div>
+            <div id="tab_btn_3" class="tabs">Tab_3</div>
+        </div>
+
+        <div id="tab_content">
+            <div id="tab_content_1" class="content active">
+                <h1>Tab_1 title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt blanditiis nisi autem quisquam ad
+                    veritatis, sequi ex alias aut commodi ut quidem libero quae cumque? Iusto numquam porro explicabo
+                    suscipit consectetur dolore inventore dolor aut recusandae enim adipisci fugit nemo vero quisquam,
+                    fugiat possimus, voluptatibus unde quibusdam molestias ipsa tempora eligendi molestiae. Provident
+                    temporibus dicta iste debitis, totam quas autem accusantium rem, inventore illum, enim nihil!
+                    Deleniti totam temporibus nisi quaerat? Voluptatem, optio deleniti? Maxime unde dolorum nisi aut
+                    optio!</p>
+            </div>
+
+            <div id="tab_content_2" class="content">
+                <h1>Tab_2 title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt blanditiis nisi autem quisquam ad
+                    veritatis, sequi ex alias aut commodi ut quidem libero quae cumque? Iusto numquam porro explicabo
+                    suscipit consectetur dolore inventore dolor aut recusandae enim adipisci fugit nemo vero quisquam,
+                    fugiat possimus, voluptatibus unde quibusdam molestias ipsa tempora eligendi molestiae. Provident
+                    temporibus dicta iste debitis, totam quas autem accusantium rem, inventore illum, enim nihil!
+                    Deleniti totam temporibus nisi quaerat? Voluptatem, optio deleniti? Maxime unde dolorum nisi aut
+                    optio!</p>
+            </div>
+
+            <div id="tab_content_3" class="content">
+                <h1>Tab_3 title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt blanditiis nisi autem quisquam ad
+                    veritatis, sequi ex alias aut commodi ut quidem libero quae cumque? Iusto numquam porro explicabo
+                    suscipit consectetur dolore inventore dolor aut recusandae enim adipisci fugit nemo vero quisquam,
+                    fugiat possimus, voluptatibus unde quibusdam molestias ipsa tempora eligendi molestiae. Provident
+                    temporibus dicta iste debitis, totam quas autem accusantium rem, inventore illum, enim nihil!
+                    Deleniti totam temporibus nisi quaerat? Voluptatem, optio deleniti? Maxime unde dolorum nisi aut
+                    optio!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // var tab_btn_1 = document.querySelector("#tab_btn_1");
+        // var tab_btn_2 = document.querySelector("#tab_btn_2");
+        // var tab_btn_3 = document.querySelector("#tab_btn_3");
+
+        // var tab_content_1 = document.querySelector("#tab_content_1");
+        // var tab_content_2 = document.querySelector("#tab_content_2");
+        // var tab_content_3 = document.querySelector("#tab_content_3");
+
+        function remove_active() {
+            // tab_btn_1.classList.remove('active');
+            // tab_btn_2.classList.remove('active');
+            // tab_btn_3.classList.remove('active');
+            // tab_content_1.classList.remove('active');
+            // tab_content_2.classList.remove('active');
+            // tab_content_3.classList.remove('active');
+
+            for (const btn of tab_btn) {
+                btn.classList.remove('active');
+            }
+
+            tab_content.forEach(content => {
+                content.classList.remove('active');
+            });
+        }
+
+
+        // tab_btn_1.onclick = function () {
+        //     remove_active();
+        //     tab_btn_1.classList.add('active');
+        //     tab_content_1.classList.add('active');
+        // }
+
+        // tab_btn_2.onclick = function () {
+        //     remove_active();
+        //     tab_btn_2.classList.add('active');
+        //     tab_content_2.classList.add('active');
+        // }
+
+        // tab_btn_3.onclick = function () {
+        //     remove_active();
+        //     tab_btn_3.classList.add('active');
+        //     tab_content_3.classList.add('active');
+        // }
+
+        var tab_btn = document.querySelectorAll('.tabs');
+        var tab_content = document.querySelectorAll('.content');
+
+        // console.log(tab_content);
+
+        for (let index = 0; index < tab_btn.length; index++) {
+            const btn = tab_btn[index];
+            // console.log(btn);
+
+            btn.onclick = function () {
+                remove_active();
+                btn.classList.add('active');
+                tab_content[index].classList.add('active');
+            }
+
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
